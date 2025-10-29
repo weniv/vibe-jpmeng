@@ -354,7 +354,7 @@ document.querySelectorAll('.mobile-submenu a').forEach(link => {
 <nav class="space-y-1">
 <button data-tab="urban-planning" class="tab-link active block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent">도시계획</button>
 <button data-tab="civil-engineering" class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent">토목설계</button>
-<button data-tab="project-management" class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent">사업관리</button>
+<button data-tab="project-management" class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent">건설사업관리</button>
 <button data-tab="disaster-assessment" class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent">재해영향평가</button>
 <button data-tab="architecture" class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent">건축사</button>
 </nav>
@@ -369,43 +369,43 @@ document.querySelectorAll('.mobile-submenu a').forEach(link => {
 <h2 class="text-3xl font-bold mb-6 text-primary dark:text-accent">도시계획</h2>
 <div class="space-y-6">
 <p class="text-lg leading-relaxed">
-도시의 미래를 설계하는 전문적인 도시계획 서비스를 제공합니다.
+국토 및 지역을 대상으로 그 동안 축적한 지역개발사업, 민간개발사업 등의 노하우를 바탕으로 21세기 제주의 개발수용에 적극적으로 대응하며 국제자유도시의 실현을 위해 최상의 도시계획 업무를 수행하고 있습니다.
 </p>
 <div class="grid md:grid-cols-2 gap-6">
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
 <span class="material-symbols-outlined text-primary dark:text-accent text-2xl">apartment</span>
-<h3 class="text-lg font-bold">도시기본계획</h3>
+<h3 class="text-lg font-bold">도시기본계획 및 도시관리계획</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-장기적 관점에서 도시의 바람직한 미래상을 제시하고, 이를 실현하기 위한 발전 방향과 전략을 수립합니다.
+제주특별자치도 도시기본계획 수립, 제주시/서귀포시 도시관리계획 수립 등 장기적 관점에서 도시의 미래상을 제시합니다.
 </p>
 </div>
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">map</span>
-<h3 class="text-lg font-bold">도시관리계획</h3>
+<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">settings</span>
+<h3 class="text-lg font-bold">도시계획시설 결정</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-용도지역·지구·구역의 지정 및 변경, 기반시설의 설치·정비·개량에 관한 계획을 수립합니다.
+전기공급설비, 항만, 문화시설, 공공하수처리시설, 체육시설, 학교 등 도시기반시설의 결정 및 변경 업무를 수행합니다.
 </p>
 </div>
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">landscape</span>
-<h3 class="text-lg font-bold">지구단위계획</h3>
+<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">park</span>
+<h3 class="text-lg font-bold">관광단지/유원지/농어촌관광단지</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-도시의 일부 지역을 대상으로 토지이용을 합리화하고 기능을 증진시키는 상세계획을 수립합니다.
+프로젝트ECO, 열해당리조트, 신화역사공원, 올드상하이팜, 송당 스누피가든 등 다양한 관광단지 개발 계획을 수립합니다.
 </p>
 </div>
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">location_city</span>
-<h3 class="text-lg font-bold">도시개발사업</h3>
+<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">home_work</span>
+<h3 class="text-lg font-bold">주택건설사업 및 대지조성사업</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-주거, 상업, 산업, 유통, 정보통신, 생태, 문화, 보건 및 복지 등의 기능이 있는 단지를 조성합니다.
+주택건설사업, 대지조성사업, 대규모 개발행위허가, 주택재건축, 관광농원 등 다양한 개발사업을 수행합니다.
 </p>
 </div>
 </div>
@@ -414,15 +414,23 @@ document.querySelectorAll('.mobile-submenu a').forEach(link => {
 <ul class="space-y-2 text-sm">
 <li class="flex items-start gap-2">
 <span class="text-primary dark:text-accent mt-1">•</span>
-<span>제주시 ○○지구 도시개발사업 기본계획 수립 (2023)</span>
+<span>제주특별자치도 도시기본계획 수립</span>
 </li>
 <li class="flex items-start gap-2">
 <span class="text-primary dark:text-accent mt-1">•</span>
-<span>서귀포시 ○○지구 지구단위계획 수립 (2022)</span>
+<span>제주시 / 서귀포시 도시관리계획 수립</span>
 </li>
 <li class="flex items-start gap-2">
 <span class="text-primary dark:text-accent mt-1">•</span>
-<span>제주특별자치도 ○○권역 도시관리계획 변경 (2021)</span>
+<span>프로젝트ECO / 열해당리조트 / 신화역사공원 / 중문관광단지 등</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>올드상하이팜 / 송당 스누피가든 / 동쪽 송당 농어촌관광휴양단지</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>이도주공 2,3단지 주택재건축사업 / 도련일동 주택건설사업</span>
 </li>
 </ul>
 </div>
@@ -436,43 +444,43 @@ document.querySelectorAll('.mobile-submenu a').forEach(link => {
 <h2 class="text-3xl font-bold mb-6 text-primary dark:text-accent">토목설계</h2>
 <div class="space-y-6">
 <p class="text-lg leading-relaxed">
-안전하고 효율적인 기반시설 설계를 통해 지역 발전에 기여합니다.
+우수한 기술인재와 탁월한 기술력을 바탕으로 SOC사업 등 국가기간산업 발전을 위하여 최선의 노력을 경주하고 있으며, 국가의 미래가치창출을 위하여 창조적인 사고와 최고의 능력을 발휘하여 국내 엔지니어링 산업을 주도해 나가고자 열정을 다 바치고 있습니다.
 </p>
 <div class="grid md:grid-cols-2 gap-6">
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
 <span class="material-symbols-outlined text-primary dark:text-accent text-2xl">road</span>
-<h3 class="text-lg font-bold">도로설계</h3>
+<h3 class="text-lg font-bold">도로 및 공항 분야</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-고속도로, 일반도로, 교량 등의 도로시설에 대한 종합적인 설계를 수행합니다.
+도시교통정비, 우회도로 건설, 자전거길 정비 등 도로 및 공항 관련 기본 및 실시설계를 수행합니다.
 </p>
 </div>
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
 <span class="material-symbols-outlined text-primary dark:text-accent text-2xl">water_drop</span>
-<h3 class="text-lg font-bold">상하수도설계</h3>
+<h3 class="text-lg font-bold">상하수도 분야</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-상수도, 하수도, 하수처리시설 등 물 순환 시스템 전반에 대한 설계를 제공합니다.
+정수장 고도정수처리시설, 하수처리시설 증설, 상수도관망 최적관리시스템 구축 등 상하수도 설계를 제공합니다.
 </p>
 </div>
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">park</span>
-<h3 class="text-lg font-bold">조경설계</h3>
+<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">waves</span>
+<h3 class="text-lg font-bold">수자원 분야</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-공원, 광장, 녹지 등 쾌적한 도시환경 조성을 위한 조경설계를 수행합니다.
+소하천 정비, 하천기본계획 수립, 재해위험개선지구 정비사업 등 수자원 관련 종합적인 설계를 수행합니다.
 </p>
 </div>
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">foundation</span>
-<h3 class="text-lg font-bold">구조설계</h3>
+<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">anchor</span>
+<h3 class="text-lg font-bold">항만 및 단지설계 분야</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-교량, 터널, 옹벽 등 토목구조물의 안전성과 경제성을 고려한 구조설계를 제공합니다.
+해양관광테마 항만 조성, 마리나항 설계, 복합리조트 조성 등 항만과 단지 설계를 제공합니다.
 </p>
 </div>
 </div>
@@ -481,15 +489,31 @@ document.querySelectorAll('.mobile-submenu a').forEach(link => {
 <ul class="space-y-2 text-sm">
 <li class="flex items-start gap-2">
 <span class="text-primary dark:text-accent mt-1">•</span>
-<span>제주 ○○도로 확장공사 실시설계 (2023)</span>
+<span>제주특별자치도 도시교통정비 및 시행계획 수립</span>
 </li>
 <li class="flex items-start gap-2">
 <span class="text-primary dark:text-accent mt-1">•</span>
-<span>○○하수처리장 증설공사 기본 및 실시설계 (2022)</span>
+<span>제주시 구국도대체우회도로(아라~회천)건설공사 기본 및 실시설계</span>
 </li>
 <li class="flex items-start gap-2">
 <span class="text-primary dark:text-accent mt-1">•</span>
-<span>○○교량 신설공사 구조설계 (2021)</span>
+<span>한림정수장 고도정수처리시설 기본 및 실시설계</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>서귀포 보목공공하수처리시설 증설사업 기본 및 실시설계</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>동홍천 하천정비사업 실시설계 / 소하천 정비 종합계획수립</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>해양관광테마 강정항 조성사업 기본 및 실시설계 / 화순 마리나항 기본설계</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>화북상업지역 도시개발사업 실시설계 / 록인제주 복합리조트 조성사업</span>
 </li>
 </ul>
 </div>
@@ -497,49 +521,49 @@ document.querySelectorAll('.mobile-submenu a').forEach(link => {
 </div>
 </section>
 
-<!-- 사업관리 Section -->
+<!-- 건설사업관리 Section -->
 <section id="project-management" class="tab-content hidden">
 <div class="bg-white dark:bg-surface-dark rounded-xl p-8 shadow-sm">
-<h2 class="text-3xl font-bold mb-6 text-primary dark:text-accent">사업관리</h2>
+<h2 class="text-3xl font-bold mb-6 text-primary dark:text-accent">건설사업관리</h2>
 <div class="space-y-6">
 <p class="text-lg leading-relaxed">
-프로젝트의 전 과정을 체계적으로 관리하여 성공적인 사업 완수를 지원합니다.
+주식회사 제이피엠(JPM)은, 기획에서 설계, 시공, 유지관리까지 CM 및 CS업무에 대한 토탈서비스를 제공합니다. (주)제이피엠의 CM은 건축주의 대리인으로서 민간개발사업 및 CM사업 기획, 설계검토, 사업자 선정, 시공, 유지관리 등 사업 전반에 걸쳐 전문 기술력을 바탕으로 통합•관리합니다.
 </p>
 <div class="grid md:grid-cols-2 gap-6">
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">assignment</span>
-<h3 class="text-lg font-bold">건설사업관리(CM)</h3>
+<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">analytics</span>
+<h3 class="text-lg font-bold">사업기획 및 분석</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-기획, 타당성 조사, 설계, 시공, 유지관리 등 건설사업의 전 단계를 종합적으로 관리합니다.
+계획단계부터 시공 후 단계까지 기획, 타당성 조사, 분석 업무를 수행하여 최적의 비용, 시간, 품질 관리 서비스를 제공합니다.
 </p>
 </div>
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
 <span class="material-symbols-outlined text-primary dark:text-accent text-2xl">engineering</span>
-<h3 class="text-lg font-bold">감리</h3>
+<h3 class="text-lg font-bold">개발컨설팅 및 설계용역</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-설계도서 및 관계법령에 따라 시공이 적정하게 이루어지는지 확인하고 품질을 관리합니다.
+개발컨설팅 관련업무 및 설계용역 수주를 통해 사업의 성공적인 추진을 지원합니다.
 </p>
 </div>
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">analytics</span>
-<h3 class="text-lg font-bold">사업타당성 분석</h3>
+<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">assignment</span>
+<h3 class="text-lg font-bold">공공 및 민간개발사업 CM</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-경제성, 기술성, 재무성 등을 종합적으로 검토하여 사업의 타당성을 분석합니다.
+공공 공사 및 민간개발사업의 건설사업관리(CM) 업무를 통해 전문적인 사업관리 서비스를 제공합니다.
 </p>
 </div>
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">schedule</span>
-<h3 class="text-lg font-bold">공정관리</h3>
+<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">verified</span>
+<h3 class="text-lg font-bold">타당성 검토 및 관리기술</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-프로젝트의 일정을 체계적으로 수립하고 관리하여 계획된 기한 내 완공을 지원합니다.
+타당성 검토, 설계 이전단계의 관리기술 강화, 기본계획 수립 등 체계적인 사업관리를 수행합니다.
 </p>
 </div>
 </div>
@@ -548,15 +572,27 @@ document.querySelectorAll('.mobile-submenu a').forEach(link => {
 <ul class="space-y-2 text-sm">
 <li class="flex items-start gap-2">
 <span class="text-primary dark:text-accent mt-1">•</span>
-<span>○○도시개발사업 건설사업관리용역 (2023)</span>
+<span>성산포항 외곽 및 접안시설 축조공사 건설사업관리용역</span>
 </li>
 <li class="flex items-start gap-2">
 <span class="text-primary dark:text-accent mt-1">•</span>
-<span>○○아파트 신축공사 감리용역 (2022)</span>
+<span>우수저류시설 설치공사(서중,보목천) 등 통합 건설사업관리용역</span>
 </li>
 <li class="flex items-start gap-2">
 <span class="text-primary dark:text-accent mt-1">•</span>
-<span>○○산업단지 조성사업 타당성 분석 (2021)</span>
+<span>서귀포 크루즈 터미널 및 친수공원 조성사업 전면책임감리용역</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>신양항 정비공사 전면책임감리용역 / 서귀포시 국도대체 우회도로 건설공사 통합전면책임감리용역</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>애월국제문화복합단지 토목감리용역 / 프로젝트 ECO 조성사업 건설사업관리용역</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>제주특별자치도 광역생활자원회수센터 조성사업 건설사업관리용역</span>
 </li>
 </ul>
 </div>
@@ -570,76 +606,74 @@ document.querySelectorAll('.mobile-submenu a').forEach(link => {
 <h2 class="text-3xl font-bold mb-6 text-primary dark:text-accent">재해영향평가</h2>
 <div class="space-y-6">
 <p class="text-lg leading-relaxed">
-개발사업으로 인한 재해 발생 가능성을 사전에 평가하고 저감 방안을 수립합니다.
+자연재해에 영향을 미치는 각종 행정계획 및 개발사업으로 인한 재해유발요인을 예측•분석하고 이에 대한 대책 수립, 인간중심의 설계를 통해 보다 안정적인 환경을 구축하는데 최선을 다하고 있습니다.
 </p>
 <div class="grid md:grid-cols-2 gap-6">
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">flood</span>
-<h3 class="text-lg font-bold">재해영향평가</h3>
+<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">factory</span>
+<h3 class="text-lg font-bold">산업/유통단지 및 에너지개발</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-자연재해대책법에 따른 재해영향평가를 실시하여 재해 예방 대책을 수립합니다.
+산업 및 유통단지조성, 에너지 개발사업의 재해영향평가를 실시하여 재해 예방 대책을 수립합니다.
+</p>
+</div>
+<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">directions</span>
+<h3 class="text-lg font-bold">교통시설 및 관광단지개발</h3>
+</div>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">
+교통시설의 건설, 관광단지 개발 및 체육시설 등의 재해 위험성을 검토하고 방재 계획을 수립합니다.
 </p>
 </div>
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
 <span class="material-symbols-outlined text-primary dark:text-accent text-2xl">water</span>
-<h3 class="text-lg font-bold">사전재해영향성 검토</h3>
+<h3 class="text-lg font-bold">하천/수자원 및 해양개발</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-소규모 개발사업의 재해 위험성을 검토하고 방재 계획을 수립합니다.
+하천의 이용 및 개발, 수자원 및 해양개발 사업의 재해영향을 평가하고 저감대책을 마련합니다.
 </p>
 </div>
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">landslide</span>
-<h3 class="text-lg font-bold">풍수해 저감대책</h3>
+<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">landscape</span>
+<h3 class="text-lg font-bold">산지개발 및 기타사업</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-태풍, 홍수 등 풍수해 발생 시 피해를 최소화하기 위한 대책을 마련합니다.
-</p>
-</div>
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">waves</span>
-<h3 class="text-lg font-bold">침수분석</h3>
-</div>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-강우 시뮬레이션을 통해 침수 위험 지역을 분석하고 배수 계획을 수립합니다.
+산지개발 및 골재채취, 그밖의 자연재해에 영향을 미치는 계획 및 사업의 재해영향평가를 수행합니다.
 </p>
 </div>
 </div>
 <div class="mt-8">
-<h3 class="text-xl font-bold mb-4">평가 항목</h3>
-<div class="bg-surface-light dark:bg-background-dark p-6 rounded-lg">
-<ul class="grid md:grid-cols-2 gap-3 text-sm">
+<h3 class="text-xl font-bold mb-4">주요 실적</h3>
+<ul class="space-y-2 text-sm">
 <li class="flex items-start gap-2">
 <span class="text-primary dark:text-accent mt-1">•</span>
-<span>홍수 및 침수 영향 검토</span>
+<span>제주 자연재해저감 종합계획 수립용역</span>
 </li>
 <li class="flex items-start gap-2">
 <span class="text-primary dark:text-accent mt-1">•</span>
-<span>토사유출 및 사면안정성 검토</span>
+<span>제주특별자치도 저류지 정밀조사 및 기능개선 방안 수립용역</span>
 </li>
 <li class="flex items-start gap-2">
 <span class="text-primary dark:text-accent mt-1">•</span>
-<span>하천 및 해안 영향 검토</span>
+<span>프로젝트ECO 조성사업 재해영향평가용역</span>
 </li>
 <li class="flex items-start gap-2">
 <span class="text-primary dark:text-accent mt-1">•</span>
-<span>강풍 영향 검토</span>
+<span>광역생활자원회수센터 조성사업 재해영향평가용역</span>
 </li>
 <li class="flex items-start gap-2">
 <span class="text-primary dark:text-accent mt-1">•</span>
-<span>지반침하 검토</span>
+<span>제주 보름왓 풍력발전 재해영향평가용역 / 서귀포시 산방산 재해위험개선사업</span>
 </li>
 <li class="flex items-start gap-2">
 <span class="text-primary dark:text-accent mt-1">•</span>
-<span>우수유출량 산정</span>
+<span>송당리 산 168번지 농어촌관광휴양단지 재해영향평가용역</span>
 </li>
 </ul>
-</div>
 </div>
 </div>
 </div>
@@ -651,78 +685,82 @@ document.querySelectorAll('.mobile-submenu a').forEach(link => {
 <h2 class="text-3xl font-bold mb-6 text-primary dark:text-accent">건축사</h2>
 <div class="space-y-6">
 <p class="text-lg leading-relaxed">
-창의적이고 실용적인 건축설계로 고객의 꿈을 실현합니다.
+제이피엠은 변화와 도전정신으로 미래의 방향을 제시하며, 도시와 건축에 관한 고품질 생활환경을 실현합니다. 친환경적이며 지속가능한 도시계획을 추구해온 제이피엠은 공공기관과 단체, 기업, 개인을 망라한 폭넓은 고객으로부터 두터운 신뢰를 받아 왔습니다.
 </p>
 <div class="grid md:grid-cols-2 gap-6">
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">home</span>
-<h3 class="text-lg font-bold">주거시설 설계</h3>
+<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">lightbulb</span>
+<h3 class="text-lg font-bold">기획설계 (Concept Design)</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-단독주택, 다세대주택, 아파트 등 다양한 주거 공간 설계를 제공합니다.
+프로젝트의 대지, 프로그램, 예산, 일정과 관련한 수행전략을 수립하고, 사업의 타당성을 분석합니다.
 </p>
 </div>
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">business</span>
-<h3 class="text-lg font-bold">업무시설 설계</h3>
+<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">draw</span>
+<h3 class="text-lg font-bold">계획 및 기본설계</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-사무실, 오피스텔 등 업무 공간의 효율성과 쾌적성을 고려한 설계를 수행합니다.
+건축물의 규모, 형태, 기능, 구조, 재료와 같은 기본사항을 결정하고 디자인 개념을 구체화합니다.
 </p>
 </div>
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">store</span>
-<h3 class="text-lg font-bold">상업시설 설계</h3>
+<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">engineering</span>
+<h3 class="text-lg font-bold">실시설계 (Construction Documents)</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-판매시설, 숙박시설, 위락시설 등 수익성을 고려한 상업 공간 설계를 제공합니다.
+기본설계를 바탕으로 공사가 가능하도록 도면을 정확하고 정밀하게 구성하여 시공 도서를 완성합니다.
 </p>
 </div>
 <div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
 <div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">account_balance</span>
-<h3 class="text-lg font-bold">공공시설 설계</h3>
+<span class="material-symbols-outlined text-primary dark:text-accent text-2xl">interior_design</span>
+<h3 class="text-lg font-bold">인테리어설계 (Interior Design)</h3>
 </div>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
-문화시설, 교육시설, 복지시설 등 공공의 이익을 위한 건축물 설계를 수행합니다.
+건축물에 이야기를 만드는 공간디자인으로 건축물의 가치를 극대화하는 인테리어 설계를 수행합니다.
 </p>
 </div>
 </div>
 <div class="mt-8">
-<h3 class="text-xl font-bold mb-4">설계 프로세스</h3>
-<div class="space-y-4">
-<div class="flex gap-4 items-start">
-<div class="flex-shrink-0 w-8 h-8 bg-primary dark:bg-accent text-white rounded-full flex items-center justify-center font-bold text-sm">1</div>
-<div>
-<h4 class="font-bold mb-1">기획 및 상담</h4>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark">고객의 요구사항을 파악하고 프로젝트의 방향을 설정합니다.</p>
-</div>
-</div>
-<div class="flex gap-4 items-start">
-<div class="flex-shrink-0 w-8 h-8 bg-primary dark:bg-accent text-white rounded-full flex items-center justify-center font-bold text-sm">2</div>
-<div>
-<h4 class="font-bold mb-1">기본설계</h4>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark">공간 배치, 외관 디자인 등 건축물의 기본 개념을 구체화합니다.</p>
-</div>
-</div>
-<div class="flex gap-4 items-start">
-<div class="flex-shrink-0 w-8 h-8 bg-primary dark:bg-accent text-white rounded-full flex items-center justify-center font-bold text-sm">3</div>
-<div>
-<h4 class="font-bold mb-1">실시설계</h4>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark">시공이 가능하도록 상세한 도면과 시방서를 작성합니다.</p>
-</div>
-</div>
-<div class="flex gap-4 items-start">
-<div class="flex-shrink-0 w-8 h-8 bg-primary dark:bg-accent text-white rounded-full flex items-center justify-center font-bold text-sm">4</div>
-<div>
-<h4 class="font-bold mb-1">인허가 및 시공</h4>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark">건축 허가를 진행하고 시공 과정을 관리합니다.</p>
-</div>
-</div>
-</div>
+<h3 class="text-xl font-bold mb-4">주요 프로젝트</h3>
+<ul class="space-y-2 text-sm">
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>해양레저관광거점사업 및 해양레저 체험센터 건립사업 기본계획용역</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>제주혁신도시 어린이(가족) 특화 생활SOC 건립 기본구상 및 타당성 검토용역</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>성산포항 여객터미널 확충 및 지역명품관 조성사업 기본계획용역</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>중문관광단지 부영호텔 및 부영리조트 건축설계 및 건축감리용역</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>산천단유원지 한라산콘도미니엄 건축설계 및 건축감리용역</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>제주 프시케 테마파크 조성사업 건축설계 및 건축감리용역</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>애월 얼라이브파크 살아있는 미술관 조성사업 건축설계용역</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary dark:text-accent mt-1">•</span>
+<span>제주밸류 신라스테이2.0 인허가총괄관리용역 / SK루체빌리조트 한라힐링파크 개발사업 인허가용역</span>
+</li>
+</ul>
 </div>
 </div>
 </div>

@@ -116,7 +116,7 @@
 <div class="pb-6 pl-6 space-y-2">
 <a href="business.html#urban-planning" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">도시계획</a>
 <a href="business.html#civil-engineering" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">토목설계</a>
-<a href="business.html#project-management" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">사업관리</a>
+<a href="business.html#project-management" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">건설사업관리</a>
 <a href="business.html#disaster-assessment" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">재해영향평가</a>
 <a href="business.html#architecture" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">건축사</a>
 </div>
@@ -172,7 +172,7 @@ const menuData = {
     projects: [
         { title: '도시계획', url: 'business.html#urban-planning' },
         { title: '토목설계', url: 'business.html#civil-engineering' },
-        { title: '사업관리', url: 'business.html#project-management' },
+        { title: '건설사업관리', url: 'business.html#project-management' },
         { title: '재해영향평가', url: 'business.html#disaster-assessment' },
         { title: '건축사', url: 'business.html#architecture' }
     ],
@@ -442,7 +442,9 @@ indicators.forEach((indicator, index) => {
 다양한 분야의 전문성을 갖춘 종합 엔지니어링 기업으로서 최적의 솔루션을 제공합니다
 </p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="flex flex-col gap-6">
+<!-- 첫 번째 줄: 3개 -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 <a href="business.html#urban-planning" class="group bg-surface-light dark:bg-surface-dark p-8 rounded-xl hover:shadow-lg transition-all duration-300">
 <div class="flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 dark:bg-accent/10 mb-6 group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined text-2xl text-primary dark:text-accent">location_city</span>
@@ -465,11 +467,15 @@ indicators.forEach((indicator, index) => {
 <div class="flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 dark:bg-accent/10 mb-6 group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined text-2xl text-primary dark:text-accent">assignment</span>
 </div>
-<h3 class="text-xl font-bold mb-3">사업관리</h3>
+<h3 class="text-xl font-bold mb-3">건설사업관리</h3>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed">
 건설사업 전반에 대한 체계적인 사업관리 및 공정관리
 </p>
 </a>
+</div>
+
+<!-- 두 번째 줄: 2개 중앙 정렬 -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:max-w-[66.666%] md:mx-auto">
 <a href="business.html#disaster-assessment" class="group bg-surface-light dark:bg-surface-dark p-8 rounded-xl hover:shadow-lg transition-all duration-300">
 <div class="flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 dark:bg-accent/10 mb-6 group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined text-2xl text-primary dark:text-accent">warning</span>
@@ -486,15 +492,6 @@ indicators.forEach((indicator, index) => {
 <h3 class="text-xl font-bold mb-3">건축사</h3>
 <p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed">
 주거, 상업, 공공시설 등 다양한 건축물의 설계 및 감리
-</p>
-</a>
-<a href="about.html#affiliates" class="group bg-surface-light dark:bg-surface-dark p-8 rounded-xl border-2 border-primary/20 dark:border-accent/20 hover:shadow-lg transition-all duration-300">
-<div class="flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 dark:bg-accent/10 mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-2xl text-primary dark:text-accent">corporate_fare</span>
-</div>
-<h3 class="text-xl font-bold mb-3">8개 관계사</h3>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed">
-전문 관계사와 함께하는 종합 엔지니어링 서비스
 </p>
 </a>
 </div>
@@ -553,7 +550,7 @@ indicators.forEach((indicator, index) => {
 <ul class="space-y-2 text-sm">
 <li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="business.html#urban-planning">도시계획</a></li>
 <li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="business.html#civil-engineering">토목설계</a></li>
-<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="business.html#project-management">사업관리</a></li>
+<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="business.html#project-management">건설사업관리</a></li>
 <li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="business.html#disaster-assessment">재해영향평가</a></li>
 <li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="business.html#architecture">건축사</a></li>
 </ul>
