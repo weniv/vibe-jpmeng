@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>관리자 로그인 - JPM Inc.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Wanted Sans Variable', 'Wanted Sans', sans-serif;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#003366",
+                        "background-light": "#FFFFFF",
+                        "background-dark": "#101922",
+                        "surface-light": "#F2F2F2",
+                        "surface-dark": "#182430",
+                        "text-light": "#333333",
+                        "text-dark": "#F2F2F2",
+                        "text-muted-light": "#617589",
+                        "text-muted-dark": "#a0aec0",
+                        "accent": "#B85C38"
+                    },
+                    fontFamily: {
+                        "display": ["Wanted Sans Variable", "Wanted Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="min-h-screen flex items-center justify-center p-4">
+<div class="w-full max-w-md">
+<!-- Logo -->
+<div class="text-center mb-8">
+<a href="index.html" class="inline-block">
+<h1 class="text-3xl font-bold text-primary dark:text-accent mb-2">JPM Inc.</h1>
+</a>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">관리자 로그인</p>
+</div>
+
+<!-- Login Card -->
+<div class="bg-white dark:bg-surface-dark rounded-xl shadow-lg p-8">
+<form id="loginForm" class="space-y-6">
+<div>
+<label for="username" class="block text-sm font-semibold mb-2">아이디</label>
+<input
+    type="text"
+    id="username"
+    name="username"
+    class="w-full px-4 py-3 border border-surface-light dark:border-background-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent bg-white dark:bg-background-dark transition-all"
+    placeholder="아이디를 입력하세요"
+    required
+    autocomplete="username"
+>
+</div>
+
+<div>
+<label for="password" class="block text-sm font-semibold mb-2">비밀번호</label>
+<input
+    type="password"
+    id="password"
+    name="password"
+    class="w-full px-4 py-3 border border-surface-light dark:border-background-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent bg-white dark:bg-background-dark transition-all"
+    placeholder="비밀번호를 입력하세요"
+    required
+    autocomplete="current-password"
+>
+</div>
+
+<div class="flex items-center justify-between">
+<label class="flex items-center gap-2 cursor-pointer">
+<input type="checkbox" id="remember" class="w-4 h-4 text-primary dark:text-accent border-surface-light dark:border-background-dark rounded focus:ring-2 focus:ring-primary dark:focus:ring-accent">
+<span class="text-sm text-text-muted-light dark:text-text-muted-dark">자동 로그인</span>
+</label>
+<a href="#" class="text-sm text-primary dark:text-accent hover:underline">비밀번호 찾기</a>
+</div>
+
+<button
+    type="submit"
+    class="w-full py-3 bg-primary dark:bg-accent text-white font-semibold rounded-lg hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent focus:ring-offset-2"
+>
+    로그인
+</button>
+</form>
+
+<!-- Error Message -->
+<div id="errorMessage" class="hidden mt-4 p-3 bg-red-100 dark:bg-red-900/30 border border-red-300 dark:border-red-700 text-red-700 dark:text-red-300 rounded-lg text-sm">
+</div>
+
+<!-- Divider -->
+<div class="relative my-6">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-surface-light dark:border-background-dark"></div>
+</div>
+<div class="relative flex justify-center text-sm">
+<span class="px-2 bg-white dark:bg-surface-dark text-text-muted-light dark:text-text-muted-dark">또는</span>
+</div>
+</div>
+
+<!-- Back to Home -->
+<a
+    href="index.html"
+    class="block w-full py-3 text-center border border-surface-light dark:border-background-dark text-text-light dark:text-text-dark font-semibold rounded-lg hover:bg-surface-light dark:hover:bg-background-dark transition-colors"
+>
+    메인으로 돌아가기
+</a>
+</div>
+
+<!-- Footer Note -->
+<div class="mt-8 text-center text-sm text-text-muted-light dark:text-text-muted-dark">
+<p>관리자 권한이 필요한 페이지입니다.</p>
+<p class="mt-2">문의: jpmeng@naver.com</p>
+</div>
+</div>
+</div>
+
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const errorMessage = document.getElementById('errorMessage');
+
+    // 임시 관리자 계정 (실제로는 서버에서 검증해야 함)
+    const ADMIN_USERNAME = 'admin';
+    const ADMIN_PASSWORD = 'jpm2024!';
+
+    if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
+        // 로그인 성공
+        errorMessage.classList.add('hidden');
+
+        // 세션 저장 (간단한 예시)
+        sessionStorage.setItem('isAdminLoggedIn', 'true');
+        sessionStorage.setItem('adminUsername', username);
+
+        // 관리자 대시보드로 이동
+        alert('로그인 성공! 관리자 대시보드로 이동합니다.');
+        window.location.href = 'admin-dashboard.html';
+    } else {
+        // 로그인 실패
+        errorMessage.textContent = '아이디 또는 비밀번호가 올바르지 않습니다.';
+        errorMessage.classList.remove('hidden');
+
+        // 비밀번호 필드 초기화
+        document.getElementById('password').value = '';
+        document.getElementById('password').focus();
+    }
+});
+
+// 엔터키로 로그인
+document.getElementById('username').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        document.getElementById('password').focus();
+    }
+});
+
+// 이미 로그인되어 있으면 대시보드로 이동
+if (sessionStorage.getItem('isAdminLoggedIn') === 'true') {
+    window.location.href = 'admin-dashboard.html';
+}
+</script>
+
+</body></html>

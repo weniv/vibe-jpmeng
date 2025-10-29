@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Architect Studio - 포트폴리오</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Wanted Sans Variable', 'Wanted Sans', sans-serif;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#003366",
+                        "background-light": "#FFFFFF",
+                        "background-dark": "#101922",
+                        "surface-light": "#F2F2F2",
+                        "surface-dark": "#182430",
+                        "text-light": "#333333",
+                        "text-dark": "#F2F2F2",
+                        "text-muted-light": "#617589",
+                        "text-muted-dark": "#a0aec0",
+                        "accent": "#B85C38"
+                    },
+                    fontFamily: {
+                        "display": ["Wanted Sans Variable", "Wanted Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="fixed top-0 left-0 right-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-surface-light dark:border-surface-dark transition-all duration-300" id="mainHeader">
+<div class="relative flex items-center justify-center whitespace-nowrap px-6 sm:px-10 lg:px-20 py-4">
+<!-- Logo - Absolute Left -->
+<a class="absolute left-6 sm:left-10 lg:left-20 text-text-light dark:text-text-dark" href="index.html">
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">JPM Inc.</h2>
+</a>
+
+<!-- Navigation - Center -->
+<nav class="hidden md:flex items-center gap-12">
+<!-- 회사소개 -->
+<div class="nav-item relative">
+<a class="text-base font-medium leading-normal hover:text-primary dark:hover:text-accent cursor-pointer transition-colors" href="about.html" data-menu="about">회사소개</a>
+</div>
+
+<!-- 사업분야 -->
+<div class="nav-item relative">
+<a class="text-base font-medium leading-normal hover:text-primary dark:hover:text-accent cursor-pointer transition-colors" href="business.html" data-menu="projects">사업분야</a>
+</div>
+
+<!-- 고객센터 -->
+<div class="nav-item relative">
+<a class="text-base font-medium leading-normal hover:text-primary dark:hover:text-accent cursor-pointer transition-colors" href="customer.html" data-menu="customer">고객센터</a>
+</div>
+</nav>
+
+<!-- Mobile Menu Button - Absolute Right -->
+<button id="mobileMenuBtn" class="absolute right-6 sm:right-10 lg:right-20 md:hidden p-2">
+<span class="material-symbols-outlined" id="menuIcon">menu</span>
+</button>
+</div>
+
+<!-- Dropdown Menu Panel (Desktop) -->
+<div id="dropdownPanel" class="hidden md:block absolute left-0 right-0 bg-white dark:bg-surface-dark shadow-lg overflow-hidden transition-all duration-300 max-h-0 opacity-0">
+<div class="container mx-auto px-6 sm:px-10 lg:px-20 py-8">
+<div id="dropdownContent" class="flex justify-center gap-16">
+<!-- Content will be inserted here by JavaScript -->
+</div>
+</div>
+</div>
+
+<!-- Mobile Menu Panel -->
+<div id="mobileMenu" class="md:hidden absolute left-0 right-0 bg-white dark:bg-surface-dark shadow-lg overflow-hidden transition-all duration-300 max-h-0">
+<div class="px-8 py-8">
+<!-- 회사소개 -->
+<div class="border-b border-gray-200 dark:border-gray-700">
+<button class="mobile-menu-toggle w-full flex items-center justify-between py-5" data-menu="about">
+<span class="font-semibold text-lg">회사소개</span>
+<span class="material-symbols-outlined text-2xl transition-transform duration-200">expand_more</span>
+</button>
+<div class="mobile-submenu max-h-0 overflow-hidden transition-all duration-300">
+<div class="pb-6 pl-6 space-y-2">
+<a href="about.html#greeting" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">인사말</a>
+<a href="about.html#ceo" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">대표이사 약력</a>
+<a href="about.html#philosophy" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">기업이념</a>
+<a href="about.html#history" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">연혁</a>
+<a href="about.html#affiliates" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">관계사</a>
+<a href="about.html#video" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">홍보 동영상</a>
+<a href="about.html#location" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">찾아오시는 길</a>
+</div>
+</div>
+</div>
+<!-- 사업분야 -->
+<div class="border-b border-gray-200 dark:border-gray-700">
+<button class="mobile-menu-toggle w-full flex items-center justify-between py-5" data-menu="projects">
+<span class="font-semibold text-lg">사업분야</span>
+<span class="material-symbols-outlined text-2xl transition-transform duration-200">expand_more</span>
+</button>
+<div class="mobile-submenu max-h-0 overflow-hidden transition-all duration-300">
+<div class="pb-6 pl-6 space-y-2">
+<a href="business.html#urban-planning" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">도시계획</a>
+<a href="business.html#civil-engineering" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">토목설계</a>
+<a href="business.html#project-management" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">사업관리</a>
+<a href="business.html#disaster-assessment" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">재해영향평가</a>
+<a href="business.html#architecture" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">건축사</a>
+</div>
+</div>
+</div>
+<!-- 고객센터 -->
+<div>
+<button class="mobile-menu-toggle w-full flex items-center justify-between py-5" data-menu="customer">
+<span class="font-semibold text-lg">고객센터</span>
+<span class="material-symbols-outlined text-2xl transition-transform duration-200">expand_more</span>
+</button>
+<div class="mobile-submenu max-h-0 overflow-hidden transition-all duration-300">
+<div class="pb-6 pl-6 space-y-2">
+<a href="customer.html#notice" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">공지사항</a>
+<a href="customer.html#contact" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">문의하기</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<style>
+.nav-item:hover ~ #dropdownPanel,
+#dropdownPanel:hover {
+    max-height: 400px;
+    opacity: 1;
+}
+</style>
+
+<script>
+// Desktop Navigation
+const navItems = document.querySelectorAll('.nav-item a');
+const dropdownPanel = document.getElementById('dropdownPanel');
+const dropdownContent = document.getElementById('dropdownContent');
+
+// Mobile Navigation
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const menuIcon = document.getElementById('menuIcon');
+const mobileMenuToggles = document.querySelectorAll('.mobile-menu-toggle');
+
+const menuData = {
+    about: [
+        { title: '인사말', url: 'about.html#greeting' },
+        { title: '대표이사 약력', url: 'about.html#ceo' },
+        { title: '기업이념', url: 'about.html#philosophy' },
+        { title: '연혁', url: 'about.html#history' },
+        { title: '관계사', url: 'about.html#affiliates' },
+        { title: '홍보 동영상', url: 'about.html#video' },
+        { title: '찾아오시는 길', url: 'about.html#location' }
+    ],
+    projects: [
+        { title: '도시계획', url: 'business.html#urban-planning' },
+        { title: '토목설계', url: 'business.html#civil-engineering' },
+        { title: '사업관리', url: 'business.html#project-management' },
+        { title: '재해영향평가', url: 'business.html#disaster-assessment' },
+        { title: '건축사', url: 'business.html#architecture' }
+    ],
+    customer: [
+        { title: '공지사항', url: 'customer.html#notice' },
+        { title: '문의하기', url: 'customer.html#contact' }
+    ]
+};
+
+let currentMenu = null;
+let isMobileMenuOpen = false;
+
+// Desktop dropdown menu
+navItems.forEach(item => {
+    item.addEventListener('mouseenter', function() {
+        const menuType = this.getAttribute('data-menu');
+        if (menuType && menuData[menuType]) {
+            showDropdown(menuType);
+        }
+    });
+});
+
+dropdownPanel.addEventListener('mouseleave', function() {
+    hideDropdown();
+});
+
+document.querySelector('header').addEventListener('mouseleave', function(e) {
+    if (!dropdownPanel.contains(e.relatedTarget)) {
+        hideDropdown();
+    }
+});
+
+function showDropdown(menuType) {
+    if (currentMenu === menuType) return;
+
+    currentMenu = menuType;
+    const items = menuData[menuType];
+
+    dropdownContent.innerHTML = items.map(item => `
+        <a href="${item.url}" class="block px-4 py-2 text-sm hover:text-primary dark:hover:text-accent transition-colors">
+            ${item.title}
+        </a>
+    `).join('');
+
+    dropdownPanel.style.maxHeight = '400px';
+    dropdownPanel.style.opacity = '1';
+}
+
+function hideDropdown() {
+    dropdownPanel.style.maxHeight = '0';
+    dropdownPanel.style.opacity = '0';
+    currentMenu = null;
+}
+
+// Mobile menu toggle
+mobileMenuBtn.addEventListener('click', function() {
+    isMobileMenuOpen = !isMobileMenuOpen;
+
+    if (isMobileMenuOpen) {
+        mobileMenu.style.maxHeight = '800px';
+        menuIcon.textContent = 'close';
+    } else {
+        mobileMenu.style.maxHeight = '0';
+        menuIcon.textContent = 'menu';
+        // Close all submenus
+        document.querySelectorAll('.mobile-submenu').forEach(submenu => {
+            submenu.style.maxHeight = '0';
+        });
+        document.querySelectorAll('.mobile-menu-toggle span.material-symbols-outlined').forEach(icon => {
+            icon.style.transform = 'rotate(0deg)';
+        });
+    }
+});
+
+// Mobile submenu toggles
+mobileMenuToggles.forEach(toggle => {
+    toggle.addEventListener('click', function() {
+        const submenu = this.nextElementSibling;
+        const icon = this.querySelector('.material-symbols-outlined');
+        const isOpen = submenu.style.maxHeight && submenu.style.maxHeight !== '0px';
+
+        // Close all other submenus
+        document.querySelectorAll('.mobile-submenu').forEach(sm => {
+            if (sm !== submenu) {
+                sm.style.maxHeight = '0';
+            }
+        });
+        document.querySelectorAll('.mobile-menu-toggle span.material-symbols-outlined').forEach(ic => {
+            if (ic !== icon) {
+                ic.style.transform = 'rotate(0deg)';
+            }
+        });
+
+        // Toggle current submenu
+        if (isOpen) {
+            submenu.style.maxHeight = '0';
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            submenu.style.maxHeight = submenu.scrollHeight + 'px';
+            icon.style.transform = 'rotate(180deg)';
+        }
+    });
+});
+
+// Close mobile menu when clicking submenu links
+document.querySelectorAll('.mobile-submenu a').forEach(link => {
+    link.addEventListener('click', function() {
+        mobileMenu.style.maxHeight = '0';
+        menuIcon.textContent = 'menu';
+        isMobileMenuOpen = false;
+
+        // Close all submenus
+        document.querySelectorAll('.mobile-submenu').forEach(submenu => {
+            submenu.style.maxHeight = '0';
+        });
+        document.querySelectorAll('.mobile-menu-toggle span.material-symbols-outlined').forEach(icon => {
+            icon.style.transform = 'rotate(0deg)';
+        });
+    });
+});
+</script>
+<main class="flex-1">
+<section class="relative flex min-h-screen flex-col items-center justify-center bg-cover bg-center bg-no-repeat p-4 text-center overflow-hidden" id="hero">
+<!-- Slide backgrounds -->
+<div class="hero-slide active absolute inset-0 bg-cover bg-center transition-opacity duration-1000" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");'></div>
+<div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&amp;w=2070&amp;auto=format&amp;fit=crop");'></div>
+<div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&amp;w=2070&amp;auto=format&amp;fit=crop");'></div>
+<div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&amp;w=2071&amp;auto=format&amp;fit=crop");'></div>
+
+<!-- Content -->
+<div class="relative z-10 flex flex-col gap-4">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] sm:text-5xl md:text-6xl">
+                            JPM Jeju Project & Planning management
+                        </h1>
+<h2 class="text-white text-base font-normal leading-normal sm:text-lg">
+                            무한한 열정과 기술력으로 세계를 선도하는 기업 — 도시를 더 아름답게, 더 쾌적하게, 더 풍요롭게
+                        </h2>
+</div>
+
+<!-- Slide indicators -->
+<div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex gap-3">
+<button class="slide-indicator w-3 h-3 rounded-full bg-white transition-all duration-300 active" data-slide="0"></button>
+<button class="slide-indicator w-3 h-3 rounded-full bg-white/50 transition-all duration-300" data-slide="1"></button>
+<button class="slide-indicator w-3 h-3 rounded-full bg-white/50 transition-all duration-300" data-slide="2"></button>
+<button class="slide-indicator w-3 h-3 rounded-full bg-white/50 transition-all duration-300" data-slide="3"></button>
+</div>
+</section>
+
+<script>
+// Hero slider
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-slide');
+const indicators = document.querySelectorAll('.slide-indicator');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    slides.forEach(slide => {
+        slide.classList.remove('active');
+        slide.style.opacity = '0';
+    });
+    indicators.forEach(indicator => {
+        indicator.classList.remove('active');
+        indicator.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+    });
+
+    slides[index].classList.add('active');
+    slides[index].style.opacity = '1';
+    indicators[index].classList.add('active');
+    indicators[index].style.backgroundColor = 'rgba(255, 255, 255, 1)';
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+}
+
+// Auto slide every 5 seconds
+setInterval(nextSlide, 5000);
+
+// Click on indicators
+indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+        currentSlide = index;
+        showSlide(currentSlide);
+    });
+});
+</script>
+<div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+<section class="py-16 sm:py-24" id="projects">
+<h2 class="text-3xl font-bold tracking-tight mb-8 px-4">Our Projects</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
+<div class="group relative col-span-2 row-span-2 aspect-square overflow-hidden rounded-lg">
+<div class="bg-cover bg-center w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105" data-alt="Modern residence with large glass windows and a minimalist facade" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDtA-eaUzYbFRtyQ3gYvtWv1zZbcIUFexaYqsy5d20IOT3ZXNL3JOGDXZ3jAztyX3U2FHoKat1GpyoE1QUOUcXAZuia4LoCexPp5Tz0FKn0vYrvpUn7x0S0Q40t96JGYmCFGZEIGTVLMJjBiKUzAzz6NieoVm1vwtHbF4c2fGDDBuI-dKKvIuatx37DqqJEbshA0bzzIkW6nPJR2QVSBFSeuQNPS7GqSlx11JlPbGmzC_W7DIcgm5iaGaGG3zQW_TqtkuhrU2tzu5dO");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<p class="text-white text-xl font-bold leading-tight">판교 주택</p>
+<p class="text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Serene residential architecture</p>
+</div>
+</div>
+<div class="group relative aspect-square overflow-hidden rounded-lg">
+<div class="bg-cover bg-center w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105" data-alt="Sleek office tower with a glass curtain wall reflecting the city skyline" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA2osrz7xw-pxqqoMx3HFOmlPIWTavJtg-fmC0EihC2NGdDctP4cuoWtZ3fqaVoFwj1mdiJcIKhqF7Fk7E0ORcW3L18f5zV5xyg9fddekCfrI2zVfnN_-p2-T9-xUv9YAfqlsr5iT0TcxCpVt6WsmfpNTvu1xL32VMjLqTVnxsCHS8KX2IFWo2fMMCh8cMPneeVN_5nXGMQ42S5W_GE_WaiFxNEg5Mk2O-MmTf9XycNK1kZps4qBxld8_u-uH1Y0pi65rUWaJiV2hcn");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<p class="text-white text-base font-bold leading-tight">서울 오피스 타워</p>
+</div>
+</div>
+<div class="group relative aspect-square overflow-hidden rounded-lg">
+<div class="bg-cover bg-center w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105" data-alt="A cultural center with a unique, flowing architectural form" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCioNaXgIEJqkJSIjh7PYWFQuL4qNFzJf0RJiUG2aSuZ5l6XmiFEG5nDTwuqtEn-CyQWhp5iewgRgJ0cilvLIDORuoHqDuvgsDylRXhIUv59-GQJI9dfrw5T1_6bfYE0KKy6fqFRLOvzF_pNrmTQc2MtaxzYjtUGSFX8CKGZqRmAYBqacvGs9yVKp-PPF3TpCvcV3tVzCtqw6Up-WfxyOwznkZrLok_aLuLouVqg1uMA67u2XjPc_LjuppX-XrbZPYph26tsNlBmVoU");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<p class="text-white text-base font-bold leading-tight">부산 문화 센터</p>
+</div>
+</div>
+<div class="group relative col-span-2 aspect-video md:aspect-auto md:aspect-square overflow-hidden rounded-lg">
+<div class="bg-cover bg-center w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105" data-alt="A luxury villa in Jeju with a swimming pool and ocean view" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmAyumRegLYoQWpVPS6G1K6qXlUAAiw2XQgtpPc85Rb0qyoBuzH9h575GexoiIGduQj5gCp9YP_LehDwTklizwxffcZbYAcrwmJ-5FaKoRbUPfL-LNlDdwoUVDZ-nvhyiiirv5eIaydNjUa_NMvOZPL86yXb6ZCp0RGs4FBoxqCMo0GMwgbzsfSEIb6ppHfLmvE__sr6V5EXQ_2XjjE5WeJOD7OSFFL2VzwixQWFqaYQIzbp-cJ9qGRDAmW0u_sKFZ6Epb6OiWez9I");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<p class="text-white text-base font-bold leading-tight">제주 빌라</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24" id="about">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-4">
+<h2 class="text-3xl font-bold tracking-tight">About Us</h2>
+<p class="text-text-light dark:text-text-dark/90 leading-relaxed">
+                                    우리의 철학은 미학적으로 즐거울 뿐만 아니라 기능적이고 지속 가능한 공간을 만드는 데 뿌리를 두고 있습니다. 우리는 고객과 긴밀하게 협력하여 고객의 비전을 현실로 만드는 협업 프로세스를 믿습니다.
+                                </p>
+<p class="text-text-muted-light dark:text-text-muted-dark leading-relaxed">
+                                    설립자이자 대표 건축가인 [건축가 이름]은 15년 이상의 경험을 바탕으로 주거, 상업 및 공공 공간에 걸쳐 혁신적인 디자인을 이끌어 왔습니다.
+                                </p>
+</div>
+<div class="w-full aspect-w-4 aspect-h-5 rounded-lg overflow-hidden">
+<img alt="Portrait of the lead architect, standing in a modern office environment with blueprints" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhxkMFVM-eZqUVXoQ-JZnwQRHoiDfC4s6RZG65euTeFaNkisYmEluqtbOzTR-vfTY1USlxrqCp4qUh0qFL-c9r54OJIlwPDcJ2lDBiO3pk27OZPsF2FFCfk19G26j9VmYY2tdasHS5iZ1Ej2yRMAyfMGgUTlyzZAlMykFbFrrMUIy8VrIiy3fyukQ-znuBRSOzYN7alzqq_l-9Lv5nP2B8NEiB836etpE0jziObmBPusnX0TSV9_p-UPA5zHMIItE_3uYZxLL4v4G3"/>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24" id="services">
+<div class="text-center">
+<h2 class="text-3xl font-bold tracking-tight">Our Services</h2>
+<p class="mt-4 max-w-2xl mx-auto text-text-muted-light dark:text-text-muted-dark">우리는 모든 규모의 프로젝트에 대해 포괄적인 건축 서비스를 제공합니다.</p>
+</div>
+<div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+<div class="flex flex-col items-center p-6 rounded-lg bg-surface-light dark:bg-surface-dark">
+<div class="flex items-center justify-center size-12 rounded-full bg-primary/10 text-primary dark:bg-accent/10 dark:text-accent mb-4">
+<span class="material-symbols-outlined">cottage</span>
+</div>
+<h3 class="text-lg font-bold">주거 공간 디자인</h3>
+<p class="mt-2 text-sm text-text-muted-light dark:text-text-muted-dark">개인의 라이프스타일을 반영한 맞춤형 주택 및 아파트 디자인.</p>
+</div>
+<div class="flex flex-col items-center p-6 rounded-lg bg-surface-light dark:bg-surface-dark">
+<div class="flex items-center justify-center size-12 rounded-full bg-primary/10 text-primary dark:bg-accent/10 dark:text-accent mb-4">
+<span class="material-symbols-outlined">store</span>
+</div>
+<h3 class="text-lg font-bold">상업 공간 설계</h3>
+<p class="mt-2 text-sm text-text-muted-light dark:text-text-muted-dark">브랜드 가치를 높이는 효율적이고 매력적인 오피스, 리테일 공간 설계.</p>
+</div>
+<div class="flex flex-col items-center p-6 rounded-lg bg-surface-light dark:bg-surface-dark">
+<div class="flex items-center justify-center size-12 rounded-full bg-primary/10 text-primary dark:bg-accent/10 dark:text-accent mb-4">
+<span class="material-symbols-outlined">construction</span>
+</div>
+<h3 class="text-lg font-bold">리모델링 및 감리</h3>
+<p class="mt-2 text-sm text-text-muted-light dark:text-text-muted-dark">기존 건물의 가치를 극대화하는 리모델링 및 철저한 시공 감리.</p>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer class="bg-surface-light dark:bg-surface-dark text-text-muted-light dark:text-text-muted-dark">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+<div class="col-span-1 md:col-span-2">
+<a class="text-text-light dark:text-text-dark mb-4 block" href="index.html">
+<h3 class="text-xl font-bold">JPM Inc.</h3>
+</a>
+<p class="text-sm mb-6">무한한 열정과 기술력으로 세계를 선도하는 기업</p>
+<div class="space-y-2 text-sm">
+<div class="flex items-center justify-between group">
+<p><span class="font-semibold">주소:</span> 제주특별자치도 제주시 원노형 6길, 6 (제이피엠빌딩)</p>
+<button class="copy-btn opacity-0 group-hover:opacity-100 transition-opacity ml-2 p-1 hover:bg-surface-light dark:hover:bg-background-dark rounded" data-copy="제주특별자치도 제주시 원노형 6길, 6 (제이피엠빌딩)">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+<div class="flex items-center justify-between group">
+<p><span class="font-semibold">전화:</span> 064-746-5600</p>
+<button class="copy-btn opacity-0 group-hover:opacity-100 transition-opacity ml-2 p-1 hover:bg-surface-light dark:hover:bg-background-dark rounded" data-copy="064-746-5600">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+<div class="flex items-center justify-between group">
+<p><span class="font-semibold">팩스:</span> 064-747-6653</p>
+<button class="copy-btn opacity-0 group-hover:opacity-100 transition-opacity ml-2 p-1 hover:bg-surface-light dark:hover:bg-background-dark rounded" data-copy="064-747-6653">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+<div class="flex items-center justify-between group">
+<p><span class="font-semibold">이메일:</span> jpmeng@naver.com</p>
+<button class="copy-btn opacity-0 group-hover:opacity-100 transition-opacity ml-2 p-1 hover:bg-surface-light dark:hover:bg-background-dark rounded" data-copy="jpmeng@naver.com">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+</div>
+</div>
+<div class="col-span-1">
+<h4 class="font-semibold text-text-light dark:text-text-dark mb-4">회사소개</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="about.html#greeting">인사말</a></li>
+<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="about.html#ceo">대표이사 약력</a></li>
+<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="about.html#philosophy">기업이념</a></li>
+<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="about.html#history">연혁</a></li>
+<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="about.html#affiliates">관계사</a></li>
+<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="about.html#video">홍보 동영상</a></li>
+<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="about.html#location">찾아오시는 길</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-semibold text-text-light dark:text-text-dark mb-4">사업분야</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="business.html#urban-planning">도시계획</a></li>
+<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="business.html#civil-engineering">토목설계</a></li>
+<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="business.html#project-management">사업관리</a></li>
+<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="business.html#disaster-assessment">재해영향평가</a></li>
+<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="business.html#architecture">건축사</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-semibold text-text-light dark:text-text-dark mb-4">고객센터</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="customer.html#notice">공지사항</a></li>
+<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="customer.html#contact">문의하기</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-12 border-t border-gray-300 dark:border-gray-700 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+<div class="flex gap-4">
+<button id="privacyBtn" class="hover:text-text-light dark:hover:text-text-dark transition-colors cursor-pointer">개인정보처리방침</button>
+<span class="text-text-muted-light dark:text-text-muted-dark">|</span>
+<a href="admin.html" class="hover:text-text-light dark:hover:text-text-dark transition-colors">관리자</a>
+<span class="text-text-muted-light dark:text-text-muted-dark">|</span>
+<a href="http://it9.co.kr/bbs/board.php?bo_table=portfolio" target="_blank" rel="noopener noreferrer" class="hover:text-text-light dark:hover:text-text-dark transition-colors">ITNINE</a>
+</div>
+<p class="text-center md:text-right">Copyright(c)2017 JPM ENGINEERING CO., LTD.</p>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Privacy Policy Modal -->
+<div id="privacyModal" class="fixed inset-0 bg-black/50 z-50 hidden items-center justify-center p-4">
+<div class="bg-white dark:bg-surface-dark rounded-xl max-w-2xl w-full max-h-[80vh] overflow-hidden flex flex-col">
+<div class="flex items-center justify-between p-6 border-b border-surface-light dark:border-background-dark">
+<h3 class="text-xl font-bold text-text-light dark:text-text-dark">개인정보처리방침</h3>
+<button id="closeModalBtn" class="text-text-muted-light dark:text-text-muted-dark hover:text-text-light dark:hover:text-text-dark transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-6 overflow-y-auto text-text-light dark:text-text-dark">
+<div class="space-y-4 text-sm">
+<p class="font-semibold">주식회사 제이피엠(이하 "회사")은 개인정보 보호법에 따라 이용자의 개인정보 보호 및 권익을 보호하고 개인정보와 관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 처리방침을 두고 있습니다.</p>
+<div>
+<h4 class="font-semibold mb-2">제1조 (개인정보의 처리목적)</h4>
+<p>회사는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보 보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.</p>
+<ul class="list-disc list-inside mt-2 space-y-1">
+<li>홈페이지 회원 가입 및 관리</li>
+<li>민원사무 처리</li>
+<li>서비스 제공에 관한 계약 이행</li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-2">제2조 (개인정보의 처리 및 보유기간)</h4>
+<p>회사는 법령에 따른 개인정보 보유·이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의받은 개인정보 보유·이용기간 내에서 개인정보를 처리·보유합니다.</p>
+</div>
+<div>
+<h4 class="font-semibold mb-2">제3조 (정보주체의 권리·의무 및 행사방법)</h4>
+<p>정보주체는 회사에 대해 언제든지 개인정보 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다.</p>
+</div>
+<div>
+<h4 class="font-semibold mb-2">제4조 (개인정보의 안전성 확보조치)</h4>
+<p>회사는 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.</p>
+<ul class="list-disc list-inside mt-2 space-y-1">
+<li>관리적 조치: 내부관리계획 수립·시행, 정기적 직원 교육 등</li>
+<li>기술적 조치: 개인정보처리시스템 등의 접근권한 관리, 접근통제시스템 설치, 고유식별정보 등의 암호화</li>
+<li>물리적 조치: 전산실, 자료보관실 등의 접근통제</li>
+</ul>
+</div>
+<div class="pt-4 border-t border-surface-light dark:border-background-dark">
+<p class="text-xs text-text-muted-light dark:text-text-muted-dark">개인정보 보호책임자</p>
+<p class="text-xs text-text-muted-light dark:text-text-muted-dark mt-1">성명: [담당자명]</p>
+<p class="text-xs text-text-muted-light dark:text-text-muted-dark">연락처: 064-746-5600, jpmeng@naver.com</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+// Privacy Modal
+const privacyBtn = document.getElementById('privacyBtn');
+const privacyModal = document.getElementById('privacyModal');
+const closeModalBtn = document.getElementById('closeModalBtn');
+
+privacyBtn.addEventListener('click', () => {
+    privacyModal.classList.remove('hidden');
+    privacyModal.classList.add('flex');
+});
+
+closeModalBtn.addEventListener('click', () => {
+    privacyModal.classList.add('hidden');
+    privacyModal.classList.remove('flex');
+});
+
+privacyModal.addEventListener('click', (e) => {
+    if (e.target === privacyModal) {
+        privacyModal.classList.add('hidden');
+        privacyModal.classList.remove('flex');
+    }
+});
+
+// Copy to clipboard functionality
+document.querySelectorAll('.copy-btn').forEach(button => {
+    button.addEventListener('click', async function() {
+        const textToCopy = this.getAttribute('data-copy');
+
+        try {
+            await navigator.clipboard.writeText(textToCopy);
+
+            // Show feedback
+            const originalIcon = this.querySelector('.material-symbols-outlined').textContent;
+            this.querySelector('.material-symbols-outlined').textContent = 'check';
+            this.classList.add('text-green-600', 'dark:text-green-400');
+
+            setTimeout(() => {
+                this.querySelector('.material-symbols-outlined').textContent = originalIcon;
+                this.classList.remove('text-green-600', 'dark:text-green-400');
+            }, 2000);
+        } catch (err) {
+            // Fallback for older browsers
+            const textArea = document.createElement('textarea');
+            textArea.value = textToCopy;
+            textArea.style.position = 'fixed';
+            textArea.style.left = '-999999px';
+            document.body.appendChild(textArea);
+            textArea.select();
+
+            try {
+                document.execCommand('copy');
+                const originalIcon = this.querySelector('.material-symbols-outlined').textContent;
+                this.querySelector('.material-symbols-outlined').textContent = 'check';
+                this.classList.add('text-green-600', 'dark:text-green-400');
+
+                setTimeout(() => {
+                    this.querySelector('.material-symbols-outlined').textContent = originalIcon;
+                    this.classList.remove('text-green-600', 'dark:text-green-400');
+                }, 2000);
+            } catch (err) {
+                console.error('복사 실패:', err);
+            }
+
+            document.body.removeChild(textArea);
+        }
+    });
+});
+</script>
+</div>
+</div>
+
+</body></html>
