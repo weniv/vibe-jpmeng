@@ -1,1142 +1,2220 @@
 <!DOCTYPE html>
-<html class="light" lang="ko"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>회사소개 - JPM Inc.</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.css"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-<style>
-        body {
-            font-family: 'Wanted Sans Variable', 'Wanted Sans', sans-serif;
-        }
-        .tab-link {
-            position: relative;
-        }
-        .tab-link.active {
-            color: #003366;
-            font-weight: 600;
-        }
-        .tab-link.active::before {
-            content: '';
-            position: absolute;
-            left: -1rem;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 4px;
-            height: 100%;
-            background-color: #003366;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
+<html class="light" lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>회사소개 - JPM Inc.</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Wanted Sans Variable", "Wanted Sans", sans-serif;
+      }
+      .tab-link {
+        position: relative;
+      }
+      .tab-link.active {
+        color: #003366;
+        font-weight: 600;
+      }
+      .tab-link.active::before {
+        content: "";
+        position: absolute;
+        left: -1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 100%;
+        background-color: #003366;
+      }
+      .tab-content {
+        display: none;
+      }
+      .tab-content.active {
+        display: block;
+      }
     </style>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#003366",
-                        "background-light": "#FFFFFF",
-                        "background-dark": "#101922",
-                        "surface-light": "#F2F2F2",
-                        "surface-dark": "#182430",
-                        "text-light": "#333333",
-                        "text-dark": "#F2F2F2",
-                        "text-muted-light": "#617589",
-                        "text-muted-dark": "#a0aec0",
-                        "accent": "#B85C38"
-                    },
-                    fontFamily: {
-                        "display": ["Wanted Sans Variable", "Wanted Sans", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#003366",
+              "background-light": "#FFFFFF",
+              "background-dark": "#101922",
+              "surface-light": "#F2F2F2",
+              "surface-dark": "#182430",
+              "text-light": "#333333",
+              "text-dark": "#F2F2F2",
+              "text-muted-light": "#617589",
+              "text-muted-dark": "#a0aec0",
+              accent: "#B85C38",
             },
-        }
+            fontFamily: {
+              display: ["Wanted Sans Variable", "Wanted Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
     </script>
-</head>
-<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
-<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
-<div class="layout-container flex h-full grow flex-col">
-<header class="fixed top-0 left-0 right-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-surface-light dark:border-surface-dark transition-all duration-300" id="mainHeader">
-<div class="relative flex items-center justify-center whitespace-nowrap px-6 sm:px-10 lg:px-20 py-4">
-<!-- Logo - Absolute Left -->
-<a class="absolute left-6 sm:left-10 lg:left-20 text-text-light dark:text-text-dark" href="index.html">
-<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">JPM Inc.</h2>
-</a>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark"
+  >
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="fixed top-0 left-0 right-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-surface-light dark:border-surface-dark transition-all duration-300"
+          id="mainHeader"
+        >
+          <div
+            class="relative flex items-center justify-center whitespace-nowrap px-6 sm:px-10 lg:px-20 py-4"
+          >
+            <!-- Logo - Absolute Left -->
+            <a
+              class="absolute left-6 sm:left-10 lg:left-20 text-text-light dark:text-text-dark"
+              href="index.html"
+            >
+              <h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">
+                JPM Inc.
+              </h2>
+            </a>
 
-<!-- Navigation - Center -->
-<nav class="hidden md:flex items-center gap-12">
-<!-- 회사소개 -->
-<div class="nav-item relative">
-<a class="text-base font-medium leading-normal text-primary dark:text-accent cursor-pointer transition-colors" href="about.html" data-menu="about">회사소개</a>
-</div>
+            <!-- Navigation - Center -->
+            <nav class="hidden md:flex items-center gap-12">
+              <!-- 회사소개 -->
+              <div class="nav-item relative">
+                <a
+                  class="text-base font-medium leading-normal text-primary dark:text-accent cursor-pointer transition-colors"
+                  href="about.html"
+                  data-menu="about"
+                  >회사소개</a
+                >
+              </div>
 
-<!-- 사업분야 -->
-<div class="nav-item relative">
-<a class="text-base font-medium leading-normal hover:text-primary dark:hover:text-accent cursor-pointer transition-colors" href="business.html" data-menu="projects">사업분야</a>
-</div>
+              <!-- 사업분야 -->
+              <div class="nav-item relative">
+                <a
+                  class="text-base font-medium leading-normal hover:text-primary dark:hover:text-accent cursor-pointer transition-colors"
+                  href="business.html"
+                  data-menu="projects"
+                  >사업분야</a
+                >
+              </div>
 
-<!-- 고객센터 -->
-<div class="nav-item relative">
-<a class="text-base font-medium leading-normal hover:text-primary dark:hover:text-accent cursor-pointer transition-colors" href="customer.html" data-menu="customer">고객센터</a>
-</div>
-</nav>
+              <!-- 고객센터 -->
+              <div class="nav-item relative">
+                <a
+                  class="text-base font-medium leading-normal hover:text-primary dark:hover:text-accent cursor-pointer transition-colors"
+                  href="customer.html"
+                  data-menu="customer"
+                  >고객센터</a
+                >
+              </div>
+            </nav>
 
-<!-- Mobile Menu Button - Absolute Right -->
-<button id="mobileMenuBtn" class="absolute right-6 sm:right-10 lg:right-20 md:hidden p-2">
-<span class="material-symbols-outlined" id="menuIcon">menu</span>
-</button>
-</div>
+            <!-- Mobile Menu Button - Absolute Right -->
+            <button
+              id="mobileMenuBtn"
+              class="absolute right-6 sm:right-10 lg:right-20 md:hidden p-2"
+            >
+              <span class="material-symbols-outlined" id="menuIcon">menu</span>
+            </button>
+          </div>
 
-<!-- Dropdown Menu Panel (Desktop) -->
-<div id="dropdownPanel" class="hidden md:block absolute left-0 right-0 bg-white dark:bg-surface-dark shadow-lg overflow-hidden transition-all duration-300 max-h-0 opacity-0">
-<div class="container mx-auto px-6 sm:px-10 lg:px-20 py-8">
-<div id="dropdownContent" class="flex justify-center gap-16">
-<!-- Content will be inserted here by JavaScript -->
-</div>
-</div>
-</div>
+          <!-- Dropdown Menu Panel (Desktop) -->
+          <div
+            id="dropdownPanel"
+            class="hidden md:block absolute left-0 right-0 bg-white dark:bg-surface-dark shadow-lg overflow-hidden transition-all duration-300 max-h-0 opacity-0"
+          >
+            <div class="container mx-auto px-6 sm:px-10 lg:px-20 py-8">
+              <div
+                id="dropdownContent"
+                class="flex justify-center gap-4 flex-wrap"
+              >
+                <!-- Content will be inserted here by JavaScript -->
+              </div>
+            </div>
+          </div>
 
-<!-- Mobile Menu Panel -->
-<div id="mobileMenu" class="md:hidden absolute left-0 right-0 bg-white dark:bg-surface-dark shadow-lg overflow-hidden transition-all duration-300 max-h-0">
-<div class="px-8 py-8">
-<!-- 회사소개 -->
-<div class="border-b border-gray-200 dark:border-gray-700">
-<button class="mobile-menu-toggle w-full flex items-center justify-between py-5" data-menu="about">
-<span class="font-semibold text-lg">회사소개</span>
-<span class="material-symbols-outlined text-2xl transition-transform duration-200">expand_more</span>
-</button>
-<div class="mobile-submenu max-h-0 overflow-hidden transition-all duration-300">
-<div class="pb-6 pl-6 space-y-2">
-<a href="about.html#greeting" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">인사말</a>
-<a href="about.html#ceo" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">대표이사 약력</a>
-<a href="about.html#philosophy" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">기업이념</a>
-<a href="about.html#history" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">연혁</a>
-<a href="about.html#affiliates" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">관계사</a>
-<a href="about.html#video" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">홍보 동영상</a>
-<a href="about.html#location" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">찾아오시는 길</a>
-</div>
-</div>
-</div>
-<!-- 사업분야 -->
-<div class="border-b border-gray-200 dark:border-gray-700">
-<button class="mobile-menu-toggle w-full flex items-center justify-between py-5" data-menu="projects">
-<span class="font-semibold text-lg">사업분야</span>
-<span class="material-symbols-outlined text-2xl transition-transform duration-200">expand_more</span>
-</button>
-<div class="mobile-submenu max-h-0 overflow-hidden transition-all duration-300">
-<div class="pb-6 pl-6 space-y-2">
-<a href="business.html#urban-planning" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">도시계획</a>
-<a href="business.html#civil-engineering" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">토목설계</a>
-<a href="business.html#project-management" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">사업관리</a>
-<a href="business.html#disaster-assessment" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">재해영향평가</a>
-<a href="business.html#architecture" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">건축사</a>
-</div>
-</div>
-</div>
-<!-- 고객센터 -->
-<div>
-<button class="mobile-menu-toggle w-full flex items-center justify-between py-5" data-menu="customer">
-<span class="font-semibold text-lg">고객센터</span>
-<span class="material-symbols-outlined text-2xl transition-transform duration-200">expand_more</span>
-</button>
-<div class="mobile-submenu max-h-0 overflow-hidden transition-all duration-300">
-<div class="pb-6 pl-6 space-y-2">
-<a href="customer.html#notice" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">공지사항</a>
-<a href="customer.html#contact" class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors">문의하기</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</header>
+          <!-- Mobile Menu Panel -->
+          <div
+            id="mobileMenu"
+            class="md:hidden absolute left-0 right-0 bg-white dark:bg-surface-dark shadow-lg overflow-hidden transition-all duration-300 max-h-0"
+          >
+            <div class="px-8 py-8">
+              <!-- 회사소개 -->
+              <div class="border-b border-gray-200 dark:border-gray-700">
+                <button
+                  class="mobile-menu-toggle w-full flex items-center justify-between py-5"
+                  data-menu="about"
+                >
+                  <span class="font-semibold text-lg">회사소개</span>
+                  <span
+                    class="material-symbols-outlined text-2xl transition-transform duration-200"
+                    >expand_more</span
+                  >
+                </button>
+                <div
+                  class="mobile-submenu max-h-0 overflow-hidden transition-all duration-300"
+                >
+                  <div class="pb-6 pl-6 space-y-2">
+                    <a
+                      href="about.html#greeting"
+                      class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors"
+                      >인사말</a
+                    >
+                    <a
+                      href="about.html#ceo"
+                      class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors"
+                      >대표이사 약력</a
+                    >
+                    <a
+                      href="about.html#philosophy"
+                      class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors"
+                      >기업이념</a
+                    >
+                    <a
+                      href="about.html#history"
+                      class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors"
+                      >연혁</a
+                    >
+                    <a
+                      href="about.html#affiliates"
+                      class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors"
+                      >관계사</a
+                    >
+                    <a
+                      href="about.html#video"
+                      class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors"
+                      >홍보 동영상</a
+                    >
+                    <a
+                      href="about.html#location"
+                      class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors"
+                      >찾아오시는 길</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- 사업분야 -->
+              <div class="border-b border-gray-200 dark:border-gray-700">
+                <button
+                  class="mobile-menu-toggle w-full flex items-center justify-between py-5"
+                  data-menu="projects"
+                >
+                  <span class="font-semibold text-lg">사업분야</span>
+                  <span
+                    class="material-symbols-outlined text-2xl transition-transform duration-200"
+                    >expand_more</span
+                  >
+                </button>
+                <div
+                  class="mobile-submenu max-h-0 overflow-hidden transition-all duration-300"
+                >
+                  <div class="pb-6 pl-6 space-y-2">
+                    <a
+                      href="business.html#urban-planning"
+                      class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors"
+                      >도시계획</a
+                    >
+                    <a
+                      href="business.html#civil-engineering"
+                      class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors"
+                      >토목설계</a
+                    >
+                    <a
+                      href="business.html#project-management"
+                      class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors"
+                      >사업관리</a
+                    >
+                    <a
+                      href="business.html#disaster-assessment"
+                      class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors"
+                      >재해영향평가</a
+                    >
+                    <a
+                      href="business.html#architecture"
+                      class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors"
+                      >건축사</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- 고객센터 -->
+              <div>
+                <button
+                  class="mobile-menu-toggle w-full flex items-center justify-between py-5"
+                  data-menu="customer"
+                >
+                  <span class="font-semibold text-lg">고객센터</span>
+                  <span
+                    class="material-symbols-outlined text-2xl transition-transform duration-200"
+                    >expand_more</span
+                  >
+                </button>
+                <div
+                  class="mobile-submenu max-h-0 overflow-hidden transition-all duration-300"
+                >
+                  <div class="pb-6 pl-6 space-y-2">
+                    <a
+                      href="customer.html#notice"
+                      class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors"
+                      >공지사항</a
+                    >
+                    <a
+                      href="customer.html#contact"
+                      class="block py-3.5 text-base text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-accent transition-colors"
+                      >문의하기</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
 
-<script>
-// Desktop Navigation
-const navItems = document.querySelectorAll('.nav-item a');
-const dropdownPanel = document.getElementById('dropdownPanel');
-const dropdownContent = document.getElementById('dropdownContent');
+        <script>
+          // Desktop Navigation
+          const navItems = document.querySelectorAll(".nav-item a");
+          const dropdownPanel = document.getElementById("dropdownPanel");
+          const dropdownContent = document.getElementById("dropdownContent");
 
-// Mobile Navigation
-const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuIcon = document.getElementById('menuIcon');
-const mobileMenuToggles = document.querySelectorAll('.mobile-menu-toggle');
+          // Mobile Navigation
+          const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+          const mobileMenu = document.getElementById("mobileMenu");
+          const menuIcon = document.getElementById("menuIcon");
+          const mobileMenuToggles = document.querySelectorAll(
+            ".mobile-menu-toggle"
+          );
 
-const menuData = {
-    about: [
-        { title: '인사말', url: 'about.html#greeting' },
-        { title: '대표이사 약력', url: 'about.html#ceo' },
-        { title: '기업이념', url: 'about.html#philosophy' },
-        { title: '연혁', url: 'about.html#history' },
-        { title: '관계사', url: 'about.html#affiliates' },
-        { title: '홍보 동영상', url: 'about.html#video' },
-        { title: '찾아오시는 길', url: 'about.html#location' }
-    ],
-    projects: [
-        { title: '도시계획', url: 'business.html#urban-planning' },
-        { title: '토목설계', url: 'business.html#civil-engineering' },
-        { title: '사업관리', url: 'business.html#project-management' },
-        { title: '재해영향평가', url: 'business.html#disaster-assessment' },
-        { title: '건축사', url: 'business.html#architecture' }
-    ],
-    customer: [
-        { title: '공지사항', url: 'customer.html#notice' },
-        { title: '문의하기', url: 'customer.html#contact' }
-    ]
-};
+          const menuData = {
+            about: [
+              { title: "인사말", url: "about.html#greeting" },
+              { title: "대표이사 약력", url: "about.html#ceo" },
+              { title: "기업이념", url: "about.html#philosophy" },
+              { title: "연혁", url: "about.html#history" },
+              { title: "관계사", url: "about.html#affiliates" },
+              { title: "홍보 동영상", url: "about.html#video" },
+              { title: "찾아오시는 길", url: "about.html#location" },
+            ],
+            projects: [
+              { title: "도시계획", url: "business.html#urban-planning" },
+              { title: "토목설계", url: "business.html#civil-engineering" },
+              { title: "사업관리", url: "business.html#project-management" },
+              {
+                title: "재해영향평가",
+                url: "business.html#disaster-assessment",
+              },
+              { title: "건축사", url: "business.html#architecture" },
+            ],
+            customer: [
+              { title: "공지사항", url: "customer.html#notice" },
+              { title: "문의하기", url: "customer.html#contact" },
+            ],
+          };
 
-let currentMenu = null;
-let isMobileMenuOpen = false;
+          let currentMenu = null;
+          let isMobileMenuOpen = false;
 
-// Desktop dropdown menu
-navItems.forEach(item => {
-    item.addEventListener('mouseenter', function() {
-        const menuType = this.getAttribute('data-menu');
-        if (menuType && menuData[menuType]) {
-            showDropdown(menuType);
-        }
-    });
-});
+          // Desktop dropdown menu
+          navItems.forEach((item) => {
+            item.addEventListener("mouseenter", function () {
+              const menuType = this.getAttribute("data-menu");
+              if (menuType && menuData[menuType]) {
+                showDropdown(menuType);
+              }
+            });
+          });
 
-dropdownPanel.addEventListener('mouseleave', function() {
-    hideDropdown();
-});
+          dropdownPanel.addEventListener("mouseleave", function () {
+            hideDropdown();
+          });
 
-document.querySelector('header').addEventListener('mouseleave', function(e) {
-    if (!dropdownPanel.contains(e.relatedTarget)) {
-        hideDropdown();
-    }
-});
+          document
+            .querySelector("header")
+            .addEventListener("mouseleave", function (e) {
+              if (!dropdownPanel.contains(e.relatedTarget)) {
+                hideDropdown();
+              }
+            });
 
-function showDropdown(menuType) {
-    if (currentMenu === menuType) return;
+          function showDropdown(menuType) {
+            if (currentMenu === menuType) return;
 
-    currentMenu = menuType;
-    const items = menuData[menuType];
+            currentMenu = menuType;
+            const items = menuData[menuType];
 
-    dropdownContent.innerHTML = items.map(item => `
-        <a href="${item.url}" class="dropdown-link block px-4 py-2 text-sm hover:text-primary dark:hover:text-accent transition-colors">
+            dropdownContent.innerHTML = items
+              .map(
+                (item) => `
+        <a href="${item.url}" class="dropdown-link px-4 py-2 text-sm hover:text-primary dark:hover:text-accent transition-colors whitespace-nowrap">
             ${item.title}
         </a>
-    `).join('');
+    `
+              )
+              .join("");
 
-    // Add click event listeners to dropdown links
-    if (menuType === 'about') {
-        document.querySelectorAll('.dropdown-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const url = this.getAttribute('href');
-                const hash = url.split('#')[1];
+            // Add click event listeners to dropdown links
+            if (menuType === "about") {
+              document.querySelectorAll(".dropdown-link").forEach((link) => {
+                link.addEventListener("click", function (e) {
+                  e.preventDefault();
+                  const url = this.getAttribute("href");
+                  const hash = url.split("#")[1];
 
-                if (hash) {
+                  if (hash) {
                     // Switch to the target tab
-                    const tabLinks = document.querySelectorAll('.tab-link');
-                    const tabContents = document.querySelectorAll('.tab-content');
+                    const tabLinks = document.querySelectorAll(".tab-link");
+                    const tabContents =
+                      document.querySelectorAll(".tab-content");
 
-                    tabLinks.forEach(l => l.classList.remove('active'));
-                    tabContents.forEach(c => c.classList.remove('active'));
+                    tabLinks.forEach((l) => l.classList.remove("active"));
+                    tabContents.forEach((c) => c.classList.remove("active"));
 
-                    const targetLink = document.querySelector(`[data-tab="${hash}"]`);
+                    const targetLink = document.querySelector(
+                      `[data-tab="${hash}"]`
+                    );
                     const targetContent = document.getElementById(hash);
 
                     if (targetLink && targetContent) {
-                        targetLink.classList.add('active');
-                        targetContent.classList.add('active');
+                      targetLink.classList.add("active");
+                      targetContent.classList.add("active");
                     }
 
                     // Scroll to top
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    window.scrollTo({ top: 0, behavior: "smooth" });
 
                     // Hide dropdown
                     hideDropdown();
+                  }
+                });
+              });
+            }
+
+            dropdownPanel.style.maxHeight = "400px";
+            dropdownPanel.style.opacity = "1";
+          }
+
+          function hideDropdown() {
+            dropdownPanel.style.maxHeight = "0";
+            dropdownPanel.style.opacity = "0";
+            currentMenu = null;
+          }
+
+          // Mobile menu toggle
+          mobileMenuBtn.addEventListener("click", function () {
+            isMobileMenuOpen = !isMobileMenuOpen;
+
+            if (isMobileMenuOpen) {
+              mobileMenu.style.maxHeight = "800px";
+              menuIcon.textContent = "close";
+            } else {
+              mobileMenu.style.maxHeight = "0";
+              menuIcon.textContent = "menu";
+              // Close all submenus
+              document
+                .querySelectorAll(".mobile-submenu")
+                .forEach((submenu) => {
+                  submenu.style.maxHeight = "0";
+                });
+              document
+                .querySelectorAll(
+                  ".mobile-menu-toggle span.material-symbols-outlined"
+                )
+                .forEach((icon) => {
+                  icon.style.transform = "rotate(0deg)";
+                });
+            }
+          });
+
+          // Mobile submenu toggles
+          mobileMenuToggles.forEach((toggle) => {
+            toggle.addEventListener("click", function () {
+              const submenu = this.nextElementSibling;
+              const icon = this.querySelector(".material-symbols-outlined");
+              const isOpen =
+                submenu.style.maxHeight && submenu.style.maxHeight !== "0px";
+
+              // Close all other submenus
+              document.querySelectorAll(".mobile-submenu").forEach((sm) => {
+                if (sm !== submenu) {
+                  sm.style.maxHeight = "0";
                 }
+              });
+              document
+                .querySelectorAll(
+                  ".mobile-menu-toggle span.material-symbols-outlined"
+                )
+                .forEach((ic) => {
+                  if (ic !== icon) {
+                    ic.style.transform = "rotate(0deg)";
+                  }
+                });
+
+              // Toggle current submenu
+              if (isOpen) {
+                submenu.style.maxHeight = "0";
+                icon.style.transform = "rotate(0deg)";
+              } else {
+                submenu.style.maxHeight = submenu.scrollHeight + "px";
+                icon.style.transform = "rotate(180deg)";
+              }
             });
+          });
+
+          // Close mobile menu when clicking submenu links
+          document.querySelectorAll(".mobile-submenu a").forEach((link) => {
+            link.addEventListener("click", function () {
+              mobileMenu.style.maxHeight = "0";
+              menuIcon.textContent = "menu";
+              isMobileMenuOpen = false;
+
+              // Close all submenus
+              document
+                .querySelectorAll(".mobile-submenu")
+                .forEach((submenu) => {
+                  submenu.style.maxHeight = "0";
+                });
+              document
+                .querySelectorAll(
+                  ".mobile-menu-toggle span.material-symbols-outlined"
+                )
+                .forEach((icon) => {
+                  icon.style.transform = "rotate(0deg)";
+                });
+            });
+          });
+        </script>
+
+        <main class="flex-1 pt-20">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex gap-8">
+              <!-- Sidebar -->
+              <aside
+                class="hidden lg:block w-64 flex-shrink-0 sticky top-28 h-fit"
+              >
+                <div
+                  class="bg-surface-light dark:bg-surface-dark rounded-xl p-6"
+                >
+                  <h3
+                    class="text-lg font-bold mb-6 text-primary dark:text-accent"
+                  >
+                    회사소개
+                  </h3>
+                  <nav class="space-y-1">
+                    <button
+                      data-tab="greeting"
+                      class="tab-link active block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent"
+                    >
+                      인사말
+                    </button>
+                    <button
+                      data-tab="ceo"
+                      class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent"
+                    >
+                      대표이사 약력
+                    </button>
+                    <button
+                      data-tab="philosophy"
+                      class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent"
+                    >
+                      기업이념
+                    </button>
+                    <button
+                      data-tab="history"
+                      class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent"
+                    >
+                      연혁
+                    </button>
+                    <button
+                      data-tab="affiliates"
+                      class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent"
+                    >
+                      관계사
+                    </button>
+                    <button
+                      data-tab="video"
+                      class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent"
+                    >
+                      홍보 동영상
+                    </button>
+                    <button
+                      data-tab="location"
+                      class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent"
+                    >
+                      찾아오시는 길
+                    </button>
+                  </nav>
+                </div>
+              </aside>
+
+              <!-- Main Content -->
+              <div class="flex-1">
+                <!-- 인사말 Section -->
+                <section id="greeting" class="tab-content active">
+                  <div
+                    class="bg-white dark:bg-surface-dark rounded-xl p-8 shadow-sm"
+                  >
+                    <h2
+                      class="text-3xl font-bold mb-6 text-primary dark:text-accent"
+                    >
+                      인사말
+                    </h2>
+                    <div class="prose dark:prose-invert max-w-none">
+                      <div
+                        class="text-center mb-8 p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                      >
+                        <p
+                          class="text-lg font-semibold text-primary dark:text-accent mb-2"
+                        >
+                          무한한 열정과 기술력을 바탕으로 끊임없는 도전정신과
+                        </p>
+                        <p
+                          class="text-xl font-bold text-primary dark:text-accent"
+                        >
+                          "창조적 마인드로 더 큰 미래를 만드는 기업"
+                        </p>
+                      </div>
+
+                      <p class="text-lg leading-relaxed mb-4">
+                        안녕하십니까?<br />
+                        주식회사 제이피엠 홈페이지를 방문해 주신 여러분들을
+                        진심으로 환영합니다.
+                      </p>
+
+                      <p class="leading-relaxed mb-4">
+                        주식회사 제이피엠은 2006년 창립한 이래 고객의 신뢰에
+                        보답하고자 성실하고 우수한 프로젝트 수행을 통해
+                        종합엔지니어링, 각종 영향평가, 건축, 컨설팅 등 다양한
+                        분야의 엔지니어링 통합 솔루션을 제공하며, 지속적인
+                        성장과 발전을 거듭하고 있습니다.
+                      </p>
+
+                      <p class="leading-relaxed mb-4">
+                        무한한 열정과 기술력으로 세계를 선도하는 기업이 되기
+                        위해 임직원 개개인이 창조적인 사고와 열정으로 최고의
+                        능력을 발휘하고 있으며, 많은 협력회사들과의 교류로 도내
+                        최고의 기업으로 발돋움 하고 있습니다.<br />
+                        뿐만 아니라 도내를 넘어 전국 최고의 기업으로 성장하기
+                        위해 서울소재 도시건축 사무소를 인수하여 전국의
+                        프로젝트를 수행하고 있습니다.
+                      </p>
+
+                      <p class="leading-relaxed mb-4">
+                        저희 (주)제이피엠은 멈추지 않는 도전정신과 끊임없는
+                        열정으로 변화와 혁신을 두려워하지 않겠습니다.<br />
+                        지난 15년 동안 전 임직원의 도전과 열정으로 제주를 위한,
+                        제주인을 위한 제주를 세계로 발돋움하기 위한 길을 쉼 없이
+                        달려 왔습니다.<br />
+                        제주의 자연과 사람 문화의 가치를 높이는 공간과 환경을
+                        만들고 제주의 꿈을 이루는데 기여하는 기업이 되겠습니다.
+                      </p>
+
+                      <p class="leading-relaxed mb-6">
+                        아울러 저희 (주)제이피엠이 그동안 쌓아온 브랜드 가치를
+                        더욱 보완하고 발전시켜 최고의 기술과 품질을 바탕으로
+                        고객에게 정성을 다하는 기업이 될 것입니다.
+                      </p>
+
+                      <p class="leading-relaxed mb-4">
+                        (주)제이피엠의 도전이 새로운 역사가 될 수 있도록 많은
+                        격려와 관심 부탁드립니다.<br />
+                        감사합니다.
+                      </p>
+
+                      <p class="mt-8 text-right font-semibold">
+                        주식회사 제이피엠 대표이사
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- 대표이사 약력 Section -->
+                <section id="ceo" class="tab-content hidden">
+                  <div
+                    class="bg-white dark:bg-surface-dark rounded-xl p-8 shadow-sm"
+                  >
+                    <h2
+                      class="text-3xl font-bold mb-6 text-primary dark:text-accent"
+                    >
+                      대표이사 약력
+                    </h2>
+                    <div class="space-y-10">
+                      <!-- 회장 유병호 -->
+                      <div
+                        class="p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                      >
+                        <h3
+                          class="text-2xl font-bold mb-6 text-primary dark:text-accent"
+                        >
+                          회장 유병호
+                        </h3>
+                        <div class="flex flex-col md:flex-row gap-6">
+                          <!-- 사진 영역 -->
+                          <div class="flex-shrink-0">
+                            <div
+                              class="w-48 h-64 bg-white dark:bg-surface-dark rounded-lg overflow-hidden border-2 border-gray-200 dark:border-gray-700"
+                            >
+                              <img
+                                src="img/image 1.png"
+                                alt="회장 유병호"
+                                class="w-full h-full object-cover"
+                              />
+                            </div>
+                          </div>
+                          <!-- 약력 테이블 -->
+                          <div class="flex-1 overflow-x-auto">
+                            <table class="w-full text-sm">
+                              <tbody
+                                class="divide-y divide-gray-200 dark:divide-gray-700"
+                              >
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold w-32">
+                                    1998.06
+                                  </td>
+                                  <td class="py-2 px-4">
+                                    중앙대학교 대학원 도시공학과 졸업
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">
+                                    2001.01
+                                  </td>
+                                  <td class="py-2 px-4">
+                                    행정자치부 장관 표창 (4회)
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">
+                                    2002.02
+                                  </td>
+                                  <td class="py-2 px-4">
+                                    대통령표창 (제 135548호)
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">
+                                    2003.02
+                                  </td>
+                                  <td class="py-2 px-4">
+                                    우수논문발표상 - 제주대학교 산업대학원
+                                    (제27호)<br />최우수 논문상 - 중앙대학교
+                                    건설대학원 (제 109호)
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">
+                                    2006.11
+                                  </td>
+                                  <td class="py-2 px-4">
+                                    주식회사 제이피엠 대표이사 회장
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">
+                                    2011.03
+                                  </td>
+                                  <td class="py-2 px-4">
+                                    제주특별자치도 체육회 이사 역임
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">
+                                    2013~2017
+                                  </td>
+                                  <td class="py-2 px-4">
+                                    (주)한라일보사 대표이사 회장 역임
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">
+                                    2017.03
+                                  </td>
+                                  <td class="py-2 px-4">
+                                    ASIA TOP 100 GOLF COURSE PANEL
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">
+                                    2019.03
+                                  </td>
+                                  <td class="py-2 px-4">
+                                    제주특별자치도 기술사회 회장
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">
+                                    2021.02
+                                  </td>
+                                  <td class="py-2 px-4">
+                                    (주)내경엔지니어링 대표이사 회장
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">
+                                    2021.03.03
+                                  </td>
+                                  <td class="py-2 px-4">
+                                    제55회 납세자의 날 제주 세무서 명예서장 위촉
+                                    국세청장 표창 모범납세자 선정
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">
+                                    2022.12.16
+                                  </td>
+                                  <td class="py-2 px-4">
+                                    제주상공회의소 제주상공대상(경영)
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">
+                                    2023.01
+                                  </td>
+                                  <td class="py-2 px-4">
+                                    한국부동산개발협회 부회장
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 대표이사 강미란 -->
+                      <div
+                        class="p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                      >
+                        <h3
+                          class="text-2xl font-bold mb-6 text-primary dark:text-accent"
+                        >
+                          대표이사 강미란
+                        </h3>
+                        <div class="flex flex-col md:flex-row gap-6">
+                          <!-- 사진 영역 -->
+                          <div class="flex-shrink-0">
+                            <div
+                              class="w-48 h-64 bg-white dark:bg-surface-dark rounded-lg overflow-hidden border-2 border-gray-200 dark:border-gray-700"
+                            >
+                              <img
+                                src="img/image 2.png"
+                                alt="대표이사 강미란"
+                                class="w-full h-full object-cover"
+                              />
+                            </div>
+                          </div>
+                          <!-- 약력 테이블 -->
+                          <div class="flex-1 overflow-x-auto">
+                            <table class="w-full text-sm">
+                              <tbody
+                                class="divide-y divide-gray-200 dark:divide-gray-700"
+                              >
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold w-32">
+                                    1994
+                                  </td>
+                                  <td class="py-2 px-4">
+                                    수원대학교 도시공학 전공
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">
+                                    2006~2008
+                                  </td>
+                                  <td class="py-2 px-4">
+                                    제주특별자치도 도시계획직
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">
+                                    2015~2020
+                                  </td>
+                                  <td class="py-2 px-4">
+                                    전 제주시성과평가위원
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">2018</td>
+                                  <td class="py-2 px-4">
+                                    산업포장 수상 [제9244호]
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">2019~</td>
+                                  <td class="py-2 px-4">
+                                    전, 한국기술인협회 지역정책자문위원
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="py-2 px-4 font-semibold">2021~</td>
+                                  <td class="py-2 px-4">
+                                    전. 제주특별자치도 지역건설산업발전위원<br />현.
+                                    대한국토도시계획학회 제주지회장<br />현.
+                                    제주특별자치도 경관위원회 심의위원<br />현.
+                                    제주특별자치도 도로관리심의위원<br />현.
+                                    서귀포시 도로관리심의위원
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- 기업이념 Section -->
+                <section id="philosophy" class="tab-content hidden">
+                  <div
+                    class="bg-white dark:bg-surface-dark rounded-xl p-8 shadow-sm"
+                  >
+                    <h2
+                      class="text-3xl font-bold mb-6 text-primary dark:text-accent"
+                    >
+                      기업이념
+                    </h2>
+
+                    <!-- 경영가치 -->
+                    <div class="mb-12">
+                      <h3
+                        class="text-2xl font-bold mb-6 text-primary dark:text-accent"
+                      >
+                        경영가치
+                      </h3>
+                      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div
+                          class="p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                        >
+                          <div class="flex items-start gap-4">
+                            <span
+                              class="text-3xl font-bold text-primary dark:text-accent flex-shrink-0"
+                              >1</span
+                            >
+                            <div>
+                              <h4
+                                class="font-bold text-primary dark:text-accent mb-2"
+                              >
+                                고객가치경영
+                              </h4>
+                              <p class="text-base leading-relaxed">
+                                우리는 고객의 요구를 충족할 수 있는 가치를
+                                끊임없이 창출하고 제공한다.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                        >
+                          <div class="flex items-start gap-4">
+                            <span
+                              class="text-3xl font-bold text-primary dark:text-accent flex-shrink-0"
+                              >2</span
+                            >
+                            <div>
+                              <h4
+                                class="font-bold text-primary dark:text-accent mb-2"
+                              >
+                                사회가치경영
+                              </h4>
+                              <p class="text-base leading-relaxed">
+                                우리는 높은 도덕성과 봉사정신으로 가족적이고
+                                건강한 조직운영과 사회기부를 실천한다.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                        >
+                          <div class="flex items-start gap-4">
+                            <span
+                              class="text-3xl font-bold text-primary dark:text-accent flex-shrink-0"
+                              >3</span
+                            >
+                            <div>
+                              <h4
+                                class="font-bold text-primary dark:text-accent mb-2"
+                              >
+                                지식가치경영
+                              </h4>
+                              <p class="text-base leading-relaxed">
+                                우리 개개인은 창조적인 사고, 열정으로 최고의
+                                능력을 발휘한다.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                        >
+                          <div class="flex items-start gap-4">
+                            <span
+                              class="text-3xl font-bold text-primary dark:text-accent flex-shrink-0"
+                              >4</span
+                            >
+                            <div>
+                              <h4
+                                class="font-bold text-primary dark:text-accent mb-2"
+                              >
+                                노사상생경영
+                              </h4>
+                              <p class="text-base leading-relaxed">
+                                우리는 열린 경영과 상생적 노사 문화구현을 통해
+                                일할 맛 나는 기업이미지를 만든다.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                        >
+                          <div class="flex items-start gap-4">
+                            <span
+                              class="text-3xl font-bold text-primary dark:text-accent flex-shrink-0"
+                              >5</span
+                            >
+                            <div>
+                              <h4
+                                class="font-bold text-primary dark:text-accent mb-2"
+                              >
+                                주인정신경영
+                              </h4>
+                              <p class="text-base leading-relaxed">
+                                우리는 임직원 하나 하나의 시너지를 극대화하는
+                                임직원 개개인의 주인정신을 실천한다.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                        >
+                          <div class="flex items-start gap-4">
+                            <span
+                              class="text-3xl font-bold text-primary dark:text-accent flex-shrink-0"
+                              >6</span
+                            >
+                            <div>
+                              <h4
+                                class="font-bold text-primary dark:text-accent mb-2"
+                              >
+                                윤리가치경영
+                              </h4>
+                              <p class="text-base leading-relaxed">
+                                우리 임직원은 정직과 공정의 마음가짐으로 회사 및
+                                사회의 사회윤리규범을 성실하게 지키며 공정한
+                                직무수행을 해나간다.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 인재상 -->
+                    <div class="mb-12">
+                      <h3
+                        class="text-2xl font-bold mb-6 text-primary dark:text-accent"
+                      >
+                        인재상
+                      </h3>
+                      <div class="grid md:grid-cols-3 gap-6">
+                        <div
+                          class="text-center p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                        >
+                          <div
+                            class="w-16 h-16 mx-auto mb-4 bg-primary/10 dark:bg-accent/10 rounded-full flex items-center justify-center"
+                          >
+                            <span
+                              class="material-symbols-outlined text-primary dark:text-accent text-3xl"
+                              >sentiment_satisfied</span
+                            >
+                          </div>
+                          <h4
+                            class="text-lg font-bold mb-2 text-primary dark:text-accent"
+                          >
+                            JOY
+                          </h4>
+                          <p
+                            class="text-sm text-text-muted-light dark:text-text-muted-dark"
+                          >
+                            일을 즐길 줄 아는
+                          </p>
+                        </div>
+                        <div
+                          class="text-center p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                        >
+                          <div
+                            class="w-16 h-16 mx-auto mb-4 bg-primary/10 dark:bg-accent/10 rounded-full flex items-center justify-center"
+                          >
+                            <span
+                              class="material-symbols-outlined text-primary dark:text-accent text-3xl"
+                              >local_fire_department</span
+                            >
+                          </div>
+                          <h4
+                            class="text-lg font-bold mb-2 text-primary dark:text-accent"
+                          >
+                            PASSION
+                          </h4>
+                          <p
+                            class="text-sm text-text-muted-light dark:text-text-muted-dark"
+                          >
+                            열정을 지닌
+                          </p>
+                        </div>
+                        <div
+                          class="text-center p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                        >
+                          <div
+                            class="w-16 h-16 mx-auto mb-4 bg-primary/10 dark:bg-accent/10 rounded-full flex items-center justify-center"
+                          >
+                            <span
+                              class="material-symbols-outlined text-primary dark:text-accent text-3xl"
+                              >manage_accounts</span
+                            >
+                          </div>
+                          <h4
+                            class="text-lg font-bold mb-2 text-primary dark:text-accent"
+                          >
+                            MANAGEMENT
+                          </h4>
+                          <p
+                            class="text-sm text-text-muted-light dark:text-text-muted-dark"
+                          >
+                            자신과 업무를 관리할 줄 아는 인재
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 슬로건 -->
+                    <div>
+                      <h3
+                        class="text-2xl font-bold mb-6 text-primary dark:text-accent"
+                      >
+                        슬로건
+                      </h3>
+                      <div
+                        class="p-8 bg-surface-light dark:bg-background-dark rounded-lg border-2 border-primary dark:border-accent"
+                      >
+                        <p
+                          class="text-2xl font-bold text-primary dark:text-accent mb-6 text-center"
+                        >
+                          2025년 위기를 기회로 JUMP, PASSION, MAGIC!<br />
+                          JMP! Everything will be OKAY!
+                        </p>
+                        <p class="text-lg leading-relaxed mb-4">
+                          2025년은 위기를 기회로 만들자는 슬로건으로 열정을
+                          가지고 도약하면 이룰수 없는 기적을 만들수 있다는
+                          기업이니셜 의미를 임직원 전체가 다시한번 되새기는
+                          계기가 될 것입니다.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                          그리고 함께하는 제이피엠 그룹 임직원들이 2025년 모든
+                          일이 다 OKAY! 될 것이라는 믿음과 목표를 다짐하는
+                          슬로건입니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- 연혁 Section -->
+                <section id="history" class="tab-content hidden">
+                  <div
+                    class="bg-white dark:bg-surface-dark rounded-xl p-8 shadow-sm"
+                  >
+                    <h2
+                      class="text-3xl font-bold mb-6 text-primary dark:text-accent"
+                    >
+                      연혁
+                    </h2>
+
+                    <!-- 회사 연혁 -->
+                    <div class="mb-12">
+                      <h3
+                        class="text-2xl font-bold mb-6 text-primary dark:text-accent flex items-center gap-2"
+                      >
+                        <span class="material-symbols-outlined"
+                          >event_note</span
+                        >
+                        회사 연혁
+                      </h3>
+                      <div class="space-y-6">
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2023
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>• 07.10 - 주택건설 / 대지조성업 등록</p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2021
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>• 02.05 - (주)내경엔지니어링 인수</p>
+                            <p>• 07.20 - 유티정보 주식회사 인수</p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2020
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>• 01.02 - 직접생산확인증명서 - 지도작성법</p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2019
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>
+                              • 03.07 - 직접생산확인증명서 - 지질학 (최초
+                              2017-03-07)
+                            </p>
+                            <p>
+                              • 03.19 - 산업디자인전문회사 신고 (환경디자인)
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2014
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>
+                              • 02.04 - 상호변경 (주)제이피엠엔지니어링 →
+                              주식회사 제이피엠
+                            </p>
+                            <p>
+                              • 02.18 - 건설기술용역업 등록 – 설계, 사업관리
+                            </p>
+                            <p>• 11.21 - 방재관리대책대행자업 체결</p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2013
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>• 01.18 - 엔지니어링 활동주체 등록 – 조경</p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2012
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>
+                              • 03.12 - 본점 소재지 변경 – 제주시 원노형6길 6
+                              제이피엠빌딩
+                            </p>
+                            <p>
+                              • 06.01 - 전기사업본부 개설 – 전기, 소방, 통신,
+                              면허등록
+                            </p>
+                            <p>
+                              • 10.19 - 기업부설연구소 변경 – 해양풍력발전연구소
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2011
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>
+                              • 01.06 - 건축사사무소 설립
+                              (주)제이피엠건축사사무소
+                            </p>
+                            <p>
+                              • 01.28 - 엔지니어링 활동주체 등록 – 환경관리
+                              (수질관리)
+                            </p>
+                            <p>• 03.30 - 엔지니어링 활동주체 등록 – 항만해안</p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2010
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>• 03.19 - 종합감리전문회사 등록</p>
+                            <p>
+                              • 06.22 - 서울지사 설립 – 지사 : 서울특별시 강남구
+                              삼성동 157-18
+                            </p>
+                            <p>• 08.11 - 환경영향평가대행자 등록</p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2009
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>• 05.14 - 엔지니어링 활동주체 등록 – 교통</p>
+                            <p>
+                              • 05.26 - 기업부설연구소 개설 –
+                              (주)제이피엠엔지니어링 기술개발연구소
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2008
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>
+                              • 09.05 - 본점 소재지 변경 – 제주시 연동 446
+                              종인빌딩 3층
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2007
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>• 01.03 - 일반측량업 등록</p>
+                            <p>
+                              • 12.06 - 엔지니어링 활동주체 등록 – 토질 및 기초
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2006
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>• 10.18 - (주)제이피엠엔지니어링 설립</p>
+                            <p>• 10.31 - 감리전문회사 등록</p>
+                            <p>
+                              • 11.03 - 엔지니어링 활동주체 등록 – 상하수도,
+                              도시계획
+                            </p>
+                            <p>
+                              • 12.29 - 엔지니어링 활동주체 등록 – 토목구조,
+                              도로 및 공항, 수자원개발
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 회사 수상경력 -->
+                    <div>
+                      <h3
+                        class="text-2xl font-bold mb-6 text-primary dark:text-accent flex items-center gap-2"
+                      >
+                        <span class="material-symbols-outlined"
+                          >emoji_events</span
+                        >
+                        회사 수상경력
+                      </h3>
+                      <div class="space-y-6">
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2025
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>• 04.30 - 일생활균형 캠페인 참여기업</p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2023
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>
+                              • 10.27 - 대한적십자사 협회봉사활동 감사패
+                              (대한적십자사)
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2022
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>
+                              • 06.01 - 청년통일 일자리 우수기업 선정
+                              (제주특별자치도)
+                            </p>
+                            <p>• 11.17 - 여성가족기업 인증 (문화체육관광부)</p>
+                            <p>
+                              • 11.17 - 가족친화인증기업 재인증 (여성가족부)
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2020
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>
+                              • 03.03 - 제55회 납세자의 날 국세청장 표창
+                              모범납세자 선정
+                            </p>
+                            <p>• 07.15 - 일생활균형 캠페인 참여기업</p>
+                            <p>
+                              • 12.16 - 2020 제주 일생활균형 우수기업 (가족친화
+                              선진문화 개선)
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2019
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>
+                              • 11.29 - 2019 제주 자원봉사대상 기업부문 우수상
+                            </p>
+                            <p>• 12.13 - 여성가족부 주관 가족친화기업 재인증</p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2018
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>
+                              • 04.02 - 일생활균형 캠페인 참여 기업
+                              (광주지방노동청)
+                            </p>
+                            <p>• 05.31 - 행정안전부장관 표창장 (제 9244호)</p>
+                            <p>
+                              • 11.16 - 현장실습 선도기업 인증
+                              (제주특별자치도교육감)
+                            </p>
+                            <p>
+                              • 12.20 - 제주 비정규직 근로환경 개선 우수기업
+                              수상 (임금수준 우수)
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2017
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>• 12.19 - 여성가족부 주관 가족친화기업 재인증</p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2014
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>• 12.19 - 여성가족부 주관 가족친화 인증</p>
+                            <p>
+                              • 12.19 - 가족친화인증기업 여성가족부장관 표창
+                              (대한민국)
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2012
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>
+                              • 07.08 - 2012년 고용우수기업 재선정
+                              (제주특별자치도)
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2011
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>
+                              • 12.22 - 성장유망중소기업 선정 (제주특별자치도)
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2010
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>• 07.08 - 고용우수기업 선정 (제주특별자치도)</p>
+                            <p>• 12.09 - 2010년 제주경제대상 부문상 수상</p>
+                          </div>
+                        </div>
+                        <div class="flex gap-6">
+                          <div
+                            class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent"
+                          >
+                            2008
+                          </div>
+                          <div class="flex-1 space-y-2">
+                            <p>
+                              • 12.22 - 성장유망중소기업 선정 (제주특별자치도)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- 관계사 Section -->
+                <section id="affiliates" class="tab-content hidden">
+                  <div
+                    class="bg-white dark:bg-surface-dark rounded-xl p-8 shadow-sm"
+                  >
+                    <h2
+                      class="text-3xl font-bold mb-6 text-primary dark:text-accent"
+                    >
+                      관계사
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                      <div
+                        class="p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                      >
+                        <div class="flex items-center gap-3 mb-3">
+                          <span
+                            class="material-symbols-outlined text-primary dark:text-accent"
+                            >apartment</span
+                          >
+                          <h3 class="text-lg font-bold">유티정보 주식회사</h3>
+                        </div>
+                        <p
+                          class="text-sm text-text-muted-light dark:text-text-muted-dark"
+                        >
+                          지능형교통시스템(ITS), 고속도로교통관리시스템(FTMS),
+                          도시교통정보시스템(UTIS) 전문 소프트웨어 개발업체
+                        </p>
+                      </div>
+                      <div
+                        class="p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                      >
+                        <div class="flex items-center gap-3 mb-3">
+                          <span
+                            class="material-symbols-outlined text-primary dark:text-accent"
+                            >engineering</span
+                          >
+                          <h3 class="text-lg font-bold">주식회사 해진이엔씨</h3>
+                        </div>
+                        <p
+                          class="text-sm text-text-muted-light dark:text-text-muted-dark"
+                        >
+                          제주 최고의 종합엔지니어링&컨설팅 기업
+                        </p>
+                      </div>
+                      <div
+                        class="p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                      >
+                        <div class="flex items-center gap-3 mb-3">
+                          <span
+                            class="material-symbols-outlined text-primary dark:text-accent"
+                            >forest</span
+                          >
+                          <h3 class="text-lg font-bold">주식회사 산들엔</h3>
+                        </div>
+                        <p
+                          class="text-sm text-text-muted-light dark:text-text-muted-dark"
+                        >
+                          제주 최고의 환경영향평가 관련 엔지니어링 서비스 기업
+                        </p>
+                      </div>
+                      <div
+                        class="p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                      >
+                        <div class="flex items-center gap-3 mb-3">
+                          <span
+                            class="material-symbols-outlined text-primary dark:text-accent"
+                            >construction</span
+                          >
+                          <h3 class="text-lg font-bold">
+                            주식회사 종합건설가온
+                          </h3>
+                        </div>
+                        <p
+                          class="text-sm text-text-muted-light dark:text-text-muted-dark"
+                        >
+                          제주 최고의 종합건설기업
+                        </p>
+                      </div>
+                      <div
+                        class="p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                      >
+                        <div class="flex items-center gap-3 mb-3">
+                          <span
+                            class="material-symbols-outlined text-primary dark:text-accent"
+                            >traffic</span
+                          >
+                          <h3 class="text-lg font-bold">주식회사 인트랜</h3>
+                        </div>
+                        <p
+                          class="text-sm text-text-muted-light dark:text-text-muted-dark"
+                        >
+                          제주 최고의 교통영향평가 전문 엔지니어링기업
+                        </p>
+                      </div>
+                      <div
+                        class="p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                      >
+                        <div class="flex items-center gap-3 mb-3">
+                          <span
+                            class="material-symbols-outlined text-primary dark:text-accent"
+                            >architecture</span
+                          >
+                          <h3 class="text-lg font-bold">
+                            주식회사 하람건축사사무소
+                          </h3>
+                        </div>
+                        <p
+                          class="text-sm text-text-muted-light dark:text-text-muted-dark"
+                        >
+                          최고의 기술력으로 안전을 설계/감리하는 기업
+                        </p>
+                      </div>
+                      <div
+                        class="p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                      >
+                        <div class="flex items-center gap-3 mb-3">
+                          <span
+                            class="material-symbols-outlined text-primary dark:text-accent"
+                            >water_drop</span
+                          >
+                          <h3 class="text-lg font-bold">
+                            주식회사 아쿠아테크제주
+                          </h3>
+                        </div>
+                        <p
+                          class="text-sm text-text-muted-light dark:text-text-muted-dark"
+                        >
+                          전국 최고 수처리기술을 보유한 수처리전문기업
+                        </p>
+                      </div>
+                      <div
+                        class="p-6 bg-surface-light dark:bg-background-dark rounded-lg"
+                      >
+                        <div class="flex items-center gap-3 mb-3">
+                          <span
+                            class="material-symbols-outlined text-primary dark:text-accent"
+                            >location_city</span
+                          >
+                          <h3 class="text-lg font-bold">주식회사 엠제인</h3>
+                        </div>
+                        <p
+                          class="text-sm text-text-muted-light dark:text-text-muted-dark"
+                        >
+                          도시계획 전문 엔지니어링기업
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- 홍보 동영상 Section -->
+                <section id="video" class="tab-content hidden">
+                  <div
+                    class="bg-white dark:bg-surface-dark rounded-xl p-8 shadow-sm"
+                  >
+                    <h2
+                      class="text-3xl font-bold mb-6 text-primary dark:text-accent"
+                    >
+                      홍보 동영상
+                    </h2>
+                    <div class="space-y-6">
+                      <p
+                        class="text-text-muted-light dark:text-text-muted-dark mb-4"
+                      >
+                        주식회사 제이피엠의 사업 소개 및 주요 프로젝트를
+                        영상으로 확인하세요.
+                      </p>
+                      <div
+                        class="aspect-video w-full rounded-lg overflow-hidden bg-surface-light dark:bg-background-dark"
+                      >
+                        <iframe
+                          class="w-full h-full"
+                          src="https://www.youtube.com/embed/kTeXTlhUajg"
+                          title="JPM Inc. 홍보 동영상"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- 찾아오시는 길 Section -->
+                <section id="location" class="tab-content hidden">
+                  <div
+                    class="bg-white dark:bg-surface-dark rounded-xl p-8 shadow-sm"
+                  >
+                    <h2
+                      class="text-3xl font-bold mb-6 text-primary dark:text-accent"
+                    >
+                      찾아오시는 길
+                    </h2>
+                    <div class="space-y-6">
+                      <div
+                        class="w-full h-96 bg-surface-light dark:bg-background-dark rounded-lg overflow-hidden"
+                      >
+                        <iframe
+                          class="w-full h-full"
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207.9756104320209!2d126.48256633465469!3d33.485509243769215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350cfb5a0952d7e9%3A0x53869ef59cb0b262!2sJPM!5e0!3m2!1sko!2skr!4v1761727051757!5m2!1sko!2skr"
+                          style="border: 0"
+                          allowfullscreen=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                      </div>
+                      <div class="space-y-4">
+                        <div>
+                          <p class="font-semibold mb-1">주소</p>
+                          <p>
+                            제주특별자치도 제주시 원노형 6길, 6 (제이피엠빌딩)
+                          </p>
+                        </div>
+                        <div>
+                          <p class="font-semibold mb-1">전화</p>
+                          <p>064-746-5600</p>
+                        </div>
+                        <div>
+                          <p class="font-semibold mb-1">이메일</p>
+                          <p>jpmeng@naver.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer
+          class="bg-surface-light dark:bg-surface-dark text-text-muted-light dark:text-text-muted-dark"
+        >
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+              <div class="col-span-1 md:col-span-2">
+                <a
+                  class="text-text-light dark:text-text-dark mb-4 block"
+                  href="index.html"
+                >
+                  <h3 class="text-xl font-bold">JPM Inc.</h3>
+                </a>
+                <p class="text-sm mb-6">
+                  무한한 열정과 기술력으로 세계를 선도하는 기업
+                </p>
+                <div class="space-y-2 text-sm">
+                  <div class="flex items-center justify-between group">
+                    <p>
+                      <span class="font-semibold">주소:</span> 제주특별자치도
+                      제주시 원노형 6길, 6 (제이피엠빌딩)
+                    </p>
+                    <button
+                      class="copy-btn opacity-0 group-hover:opacity-100 transition-opacity ml-2 p-1 hover:bg-surface-light dark:hover:bg-background-dark rounded"
+                      data-copy="제주특별자치도 제주시 원노형 6길, 6 (제이피엠빌딩)"
+                    >
+                      <span class="material-symbols-outlined text-sm"
+                        >content_copy</span
+                      >
+                    </button>
+                  </div>
+                  <div class="flex items-center justify-between group">
+                    <p><span class="font-semibold">전화:</span> 064-746-5600</p>
+                    <button
+                      class="copy-btn opacity-0 group-hover:opacity-100 transition-opacity ml-2 p-1 hover:bg-surface-light dark:hover:bg-background-dark rounded"
+                      data-copy="064-746-5600"
+                    >
+                      <span class="material-symbols-outlined text-sm"
+                        >content_copy</span
+                      >
+                    </button>
+                  </div>
+                  <div class="flex items-center justify-between group">
+                    <p><span class="font-semibold">팩스:</span> 064-747-6653</p>
+                    <button
+                      class="copy-btn opacity-0 group-hover:opacity-100 transition-opacity ml-2 p-1 hover:bg-surface-light dark:hover:bg-background-dark rounded"
+                      data-copy="064-747-6653"
+                    >
+                      <span class="material-symbols-outlined text-sm"
+                        >content_copy</span
+                      >
+                    </button>
+                  </div>
+                  <div class="flex items-center justify-between group">
+                    <p>
+                      <span class="font-semibold">이메일:</span>
+                      jpmeng@naver.com
+                    </p>
+                    <button
+                      class="copy-btn opacity-0 group-hover:opacity-100 transition-opacity ml-2 p-1 hover:bg-surface-light dark:hover:bg-background-dark rounded"
+                      data-copy="jpmeng@naver.com"
+                    >
+                      <span class="material-symbols-outlined text-sm"
+                        >content_copy</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-1">
+                <h4
+                  class="font-semibold text-text-light dark:text-text-dark mb-4"
+                >
+                  회사소개
+                </h4>
+                <ul class="space-y-2 text-sm">
+                  <li>
+                    <a
+                      class="hover:text-text-light dark:hover:text-text-dark transition-colors"
+                      href="about.html#greeting"
+                      >인사말</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-text-light dark:hover:text-text-dark transition-colors"
+                      href="about.html#ceo"
+                      >대표이사 약력</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-text-light dark:hover:text-text-dark transition-colors"
+                      href="about.html#philosophy"
+                      >기업이념</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-text-light dark:hover:text-text-dark transition-colors"
+                      href="about.html#history"
+                      >연혁</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-text-light dark:hover:text-text-dark transition-colors"
+                      href="about.html#affiliates"
+                      >관계사</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-text-light dark:hover:text-text-dark transition-colors"
+                      href="about.html#video"
+                      >홍보 동영상</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-text-light dark:hover:text-text-dark transition-colors"
+                      href="about.html#location"
+                      >찾아오시는 길</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-span-1">
+                <h4
+                  class="font-semibold text-text-light dark:text-text-dark mb-4"
+                >
+                  사업분야
+                </h4>
+                <ul class="space-y-2 text-sm">
+                  <li>
+                    <a
+                      class="hover:text-text-light dark:hover:text-text-dark transition-colors"
+                      href="business.html#urban-planning"
+                      >도시계획</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-text-light dark:hover:text-text-dark transition-colors"
+                      href="business.html#civil-engineering"
+                      >토목설계</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-text-light dark:hover:text-text-dark transition-colors"
+                      href="business.html#project-management"
+                      >사업관리</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-text-light dark:hover:text-text-dark transition-colors"
+                      href="business.html#disaster-assessment"
+                      >재해영향평가</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-text-light dark:hover:text-text-dark transition-colors"
+                      href="business.html#architecture"
+                      >건축사</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-span-1">
+                <h4
+                  class="font-semibold text-text-light dark:text-text-dark mb-4"
+                >
+                  고객센터
+                </h4>
+                <ul class="space-y-2 text-sm">
+                  <li>
+                    <a
+                      class="hover:text-text-light dark:hover:text-text-dark transition-colors"
+                      href="customer.html#notice"
+                      >공지사항</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-text-light dark:hover:text-text-dark transition-colors"
+                      href="customer.html#contact"
+                      >문의하기</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="mt-12 border-t border-gray-300 dark:border-gray-700 pt-8"
+            >
+              <div
+                class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm"
+              >
+                <div class="flex gap-4">
+                  <button
+                    id="privacyBtn"
+                    class="hover:text-text-light dark:hover:text-text-dark transition-colors cursor-pointer"
+                  >
+                    개인정보처리방침
+                  </button>
+                  <span class="text-text-muted-light dark:text-text-muted-dark"
+                    >|</span
+                  >
+                  <a
+                    href="admin.html"
+                    class="hover:text-text-light dark:hover:text-text-dark transition-colors"
+                    >관리자</a
+                  >
+                  <span class="text-text-muted-light dark:text-text-muted-dark"
+                    >|</span
+                  >
+                  <a
+                    href="http://it9.co.kr/bbs/board.php?bo_table=portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:text-text-light dark:hover:text-text-dark transition-colors"
+                    >ITNINE</a
+                  >
+                </div>
+                <p class="text-center md:text-right">
+                  Copyright(c)2017 JPM ENGINEERING CO., LTD.
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- Privacy Policy Modal -->
+        <div
+          id="privacyModal"
+          class="fixed inset-0 bg-black/50 z-50 hidden items-center justify-center p-4"
+        >
+          <div
+            class="bg-white dark:bg-surface-dark rounded-xl max-w-2xl w-full max-h-[80vh] overflow-hidden flex flex-col"
+          >
+            <div
+              class="flex items-center justify-between p-6 border-b border-surface-light dark:border-background-dark"
+            >
+              <h3 class="text-xl font-bold text-text-light dark:text-text-dark">
+                개인정보처리방침
+              </h3>
+              <button
+                id="closeModalBtn"
+                class="text-text-muted-light dark:text-text-muted-dark hover:text-text-light dark:hover:text-text-dark transition-colors"
+              >
+                <span class="material-symbols-outlined">close</span>
+              </button>
+            </div>
+            <div
+              class="p-6 overflow-y-auto text-text-light dark:text-text-dark"
+            >
+              <div class="space-y-4 text-sm">
+                <p class="font-semibold">
+                  주식회사 제이피엠(이하 "회사")은 개인정보 보호법에 따라
+                  이용자의 개인정보 보호 및 권익을 보호하고 개인정보와 관련한
+                  이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은
+                  처리방침을 두고 있습니다.
+                </p>
+                <div>
+                  <h4 class="font-semibold mb-2">
+                    제1조 (개인정보의 처리목적)
+                  </h4>
+                  <p>
+                    회사는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고
+                    있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며,
+                    이용 목적이 변경되는 경우에는 개인정보 보호법 제18조에 따라
+                    별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.
+                  </p>
+                  <ul class="list-disc list-inside mt-2 space-y-1">
+                    <li>홈페이지 회원 가입 및 관리</li>
+                    <li>민원사무 처리</li>
+                    <li>서비스 제공에 관한 계약 이행</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">
+                    제2조 (개인정보의 처리 및 보유기간)
+                  </h4>
+                  <p>
+                    회사는 법령에 따른 개인정보 보유·이용기간 또는
+                    정보주체로부터 개인정보를 수집 시에 동의받은 개인정보
+                    보유·이용기간 내에서 개인정보를 처리·보유합니다.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">
+                    제3조 (정보주체의 권리·의무 및 행사방법)
+                  </h4>
+                  <p>
+                    정보주체는 회사에 대해 언제든지 개인정보
+                    열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">
+                    제4조 (개인정보의 안전성 확보조치)
+                  </h4>
+                  <p>
+                    회사는 개인정보의 안전성 확보를 위해 다음과 같은 조치를
+                    취하고 있습니다.
+                  </p>
+                  <ul class="list-disc list-inside mt-2 space-y-1">
+                    <li>
+                      관리적 조치: 내부관리계획 수립·시행, 정기적 직원 교육 등
+                    </li>
+                    <li>
+                      기술적 조치: 개인정보처리시스템 등의 접근권한 관리,
+                      접근통제시스템 설치, 고유식별정보 등의 암호화
+                    </li>
+                    <li>물리적 조치: 전산실, 자료보관실 등의 접근통제</li>
+                  </ul>
+                </div>
+                <div
+                  class="pt-4 border-t border-surface-light dark:border-background-dark"
+                >
+                  <p
+                    class="text-xs text-text-muted-light dark:text-text-muted-dark"
+                  >
+                    개인정보 보호책임자
+                  </p>
+                  <p
+                    class="text-xs text-text-muted-light dark:text-text-muted-dark mt-1"
+                  >
+                    성명: [담당자명]
+                  </p>
+                  <p
+                    class="text-xs text-text-muted-light dark:text-text-muted-dark"
+                  >
+                    연락처: 064-746-5600, jpmeng@naver.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Tab functionality
+      const tabLinks = document.querySelectorAll(".tab-link");
+      const tabContents = document.querySelectorAll(".tab-content");
+
+      tabLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          const targetTab = this.getAttribute("data-tab");
+
+          // Remove active class from all tabs and contents
+          tabLinks.forEach((l) => l.classList.remove("active"));
+          tabContents.forEach((c) => c.classList.remove("active"));
+
+          // Add active class to clicked tab and corresponding content
+          this.classList.add("active");
+          document.getElementById(targetTab).classList.add("active");
         });
-    }
+      });
 
-    dropdownPanel.style.maxHeight = '400px';
-    dropdownPanel.style.opacity = '1';
-}
+      // Handle URL hash on load
+      window.addEventListener("load", () => {
+        if (window.location.hash) {
+          const targetId = window.location.hash.substring(1);
+          const targetLink = document.querySelector(`[data-tab="${targetId}"]`);
 
-function hideDropdown() {
-    dropdownPanel.style.maxHeight = '0';
-    dropdownPanel.style.opacity = '0';
-    currentMenu = null;
-}
+          if (targetLink) {
+            tabLinks.forEach((l) => l.classList.remove("active"));
+            tabContents.forEach((c) => c.classList.remove("active"));
 
-// Mobile menu toggle
-mobileMenuBtn.addEventListener('click', function() {
-    isMobileMenuOpen = !isMobileMenuOpen;
-
-    if (isMobileMenuOpen) {
-        mobileMenu.style.maxHeight = '800px';
-        menuIcon.textContent = 'close';
-    } else {
-        mobileMenu.style.maxHeight = '0';
-        menuIcon.textContent = 'menu';
-        // Close all submenus
-        document.querySelectorAll('.mobile-submenu').forEach(submenu => {
-            submenu.style.maxHeight = '0';
-        });
-        document.querySelectorAll('.mobile-menu-toggle span.material-symbols-outlined').forEach(icon => {
-            icon.style.transform = 'rotate(0deg)';
-        });
-    }
-});
-
-// Mobile submenu toggles
-mobileMenuToggles.forEach(toggle => {
-    toggle.addEventListener('click', function() {
-        const submenu = this.nextElementSibling;
-        const icon = this.querySelector('.material-symbols-outlined');
-        const isOpen = submenu.style.maxHeight && submenu.style.maxHeight !== '0px';
-
-        // Close all other submenus
-        document.querySelectorAll('.mobile-submenu').forEach(sm => {
-            if (sm !== submenu) {
-                sm.style.maxHeight = '0';
-            }
-        });
-        document.querySelectorAll('.mobile-menu-toggle span.material-symbols-outlined').forEach(ic => {
-            if (ic !== icon) {
-                ic.style.transform = 'rotate(0deg)';
-            }
-        });
-
-        // Toggle current submenu
-        if (isOpen) {
-            submenu.style.maxHeight = '0';
-            icon.style.transform = 'rotate(0deg)';
-        } else {
-            submenu.style.maxHeight = submenu.scrollHeight + 'px';
-            icon.style.transform = 'rotate(180deg)';
+            targetLink.classList.add("active");
+            document.getElementById(targetId).classList.add("active");
+          }
         }
-    });
-});
+      });
 
-// Close mobile menu when clicking submenu links
-document.querySelectorAll('.mobile-submenu a').forEach(link => {
-    link.addEventListener('click', function() {
-        mobileMenu.style.maxHeight = '0';
-        menuIcon.textContent = 'menu';
-        isMobileMenuOpen = false;
+      // Privacy Modal
+      const privacyBtn = document.getElementById("privacyBtn");
+      const privacyModal = document.getElementById("privacyModal");
+      const closeModalBtn = document.getElementById("closeModalBtn");
 
-        // Close all submenus
-        document.querySelectorAll('.mobile-submenu').forEach(submenu => {
-            submenu.style.maxHeight = '0';
-        });
-        document.querySelectorAll('.mobile-menu-toggle span.material-symbols-outlined').forEach(icon => {
-            icon.style.transform = 'rotate(0deg)';
-        });
-    });
-});
-</script>
+      privacyBtn.addEventListener("click", () => {
+        privacyModal.classList.remove("hidden");
+        privacyModal.classList.add("flex");
+      });
 
-<main class="flex-1 pt-20">
-<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-<div class="flex gap-8">
-<!-- Sidebar -->
-<aside class="hidden lg:block w-64 flex-shrink-0 sticky top-28 h-fit">
-<div class="bg-surface-light dark:bg-surface-dark rounded-xl p-6">
-<h3 class="text-lg font-bold mb-6 text-primary dark:text-accent">회사소개</h3>
-<nav class="space-y-1">
-<button data-tab="greeting" class="tab-link active block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent">인사말</button>
-<button data-tab="ceo" class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent">대표이사 약력</button>
-<button data-tab="philosophy" class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent">기업이념</button>
-<button data-tab="history" class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent">연혁</button>
-<button data-tab="affiliates" class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent">관계사</button>
-<button data-tab="video" class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent">홍보 동영상</button>
-<button data-tab="location" class="tab-link block w-full text-left py-3 px-4 text-sm transition-colors hover:text-primary dark:hover:text-accent">찾아오시는 길</button>
-</nav>
-</div>
-</aside>
+      closeModalBtn.addEventListener("click", () => {
+        privacyModal.classList.add("hidden");
+        privacyModal.classList.remove("flex");
+      });
 
-<!-- Main Content -->
-<div class="flex-1">
-<!-- 인사말 Section -->
-<section id="greeting" class="tab-content active">
-<div class="bg-white dark:bg-surface-dark rounded-xl p-8 shadow-sm">
-<h2 class="text-3xl font-bold mb-6 text-primary dark:text-accent">인사말</h2>
-<div class="prose dark:prose-invert max-w-none">
-<div class="text-center mb-8 p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<p class="text-lg font-semibold text-primary dark:text-accent mb-2">무한한 열정과 기술력을 바탕으로 끊임없는 도전정신과</p>
-<p class="text-xl font-bold text-primary dark:text-accent">"창조적 마인드로 더 큰 미래를 만드는 기업"</p>
-</div>
-
-<p class="text-lg leading-relaxed mb-4">
-안녕하십니까?<br>
-주식회사 제이피엠 홈페이지를 방문해 주신 여러분들을 진심으로 환영합니다.
-</p>
-
-<p class="leading-relaxed mb-4">
-주식회사 제이피엠은 2006년 창립한 이래 고객의 신뢰에 보답하고자 성실하고 우수한 프로젝트 수행을 통해 종합엔지니어링, 각종 영향평가, 건축, 컨설팅 등 다양한 분야의 엔지니어링 통합 솔루션을 제공하며, 지속적인 성장과 발전을 거듭하고 있습니다.
-</p>
-
-<p class="leading-relaxed mb-4">
-무한한 열정과 기술력으로 세계를 선도하는 기업이 되기 위해 임직원 개개인이 창조적인 사고와 열정으로 최고의 능력을 발휘하고 있으며, 많은 협력회사들과의 교류로 도내 최고의 기업으로 발돋움 하고 있습니다.<br>
-뿐만 아니라 도내를 넘어 전국 최고의 기업으로 성장하기 위해 서울소재 도시건축 사무소를 인수하여 전국의 프로젝트를 수행하고 있습니다.
-</p>
-
-<p class="leading-relaxed mb-4">
-저희 (주)제이피엠은 멈추지 않는 도전정신과 끊임없는 열정으로 변화와 혁신을 두려워하지 않겠습니다.<br>
-지난 15년 동안 전 임직원의 도전과 열정으로 제주를 위한, 제주인을 위한 제주를 세계로 발돋움하기 위한 길을 쉼 없이 달려 왔습니다.<br>
-제주의 자연과 사람 문화의 가치를 높이는 공간과 환경을 만들고 제주의 꿈을 이루는데 기여하는 기업이 되겠습니다.
-</p>
-
-<p class="leading-relaxed mb-6">
-아울러 저희 (주)제이피엠이 그동안 쌓아온 브랜드 가치를 더욱 보완하고 발전시켜 최고의 기술과 품질을 바탕으로 고객에게 정성을 다하는 기업이 될 것입니다.
-</p>
-
-<p class="leading-relaxed mb-4">
-(주)제이피엠의 도전이 새로운 역사가 될 수 있도록 많은 격려와 관심 부탁드립니다.<br>
-감사합니다.
-</p>
-
-<p class="mt-8 text-right font-semibold">
-주식회사 제이피엠 대표이사
-</p>
-</div>
-</div>
-</section>
-
-<!-- 대표이사 약력 Section -->
-<section id="ceo" class="tab-content hidden">
-<div class="bg-white dark:bg-surface-dark rounded-xl p-8 shadow-sm">
-<h2 class="text-3xl font-bold mb-6 text-primary dark:text-accent">대표이사 약력</h2>
-<div class="space-y-10">
-
-<!-- 회장 유병호 -->
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<h3 class="text-2xl font-bold mb-6 text-primary dark:text-accent">회장 유병호</h3>
-<div class="flex flex-col md:flex-row gap-6">
-<!-- 사진 영역 -->
-<div class="flex-shrink-0">
-<div class="w-48 h-64 bg-white dark:bg-surface-dark rounded-lg overflow-hidden border-2 border-gray-200 dark:border-gray-700">
-<img src="img/image 1.png" alt="회장 유병호" class="w-full h-full object-cover">
-</div>
-</div>
-<!-- 약력 테이블 -->
-<div class="flex-1 overflow-x-auto">
-<table class="w-full text-sm">
-<tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-<tr><td class="py-2 px-4 font-semibold w-32">1998.06</td><td class="py-2 px-4">중앙대학교 대학원 도시공학과 졸업</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2001.01</td><td class="py-2 px-4">행정자치부 장관 표창 (4회)</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2002.02</td><td class="py-2 px-4">대통령표창 (제 135548호)</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2003.02</td><td class="py-2 px-4">우수논문발표상 - 제주대학교 산업대학원 (제27호)<br>최우수 논문상 - 중앙대학교 건설대학원 (제 109호)</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2006.11</td><td class="py-2 px-4">주식회사 제이피엠 대표이사 회장</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2011.03</td><td class="py-2 px-4">제주특별자치도 체육회 이사 역임</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2013~2017</td><td class="py-2 px-4">(주)한라일보사 대표이사 회장 역임</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2017.03</td><td class="py-2 px-4">ASIA TOP 100 GOLF COURSE PANEL</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2019.03</td><td class="py-2 px-4">제주특별자치도 기술사회 회장</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2021.02</td><td class="py-2 px-4">(주)내경엔지니어링 대표이사 회장</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2021.03.03</td><td class="py-2 px-4">제55회 납세자의 날 제주 세무서 명예서장 위촉 국세청장 표창 모범납세자 선정</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2022.12.16</td><td class="py-2 px-4">제주상공회의소 제주상공대상(경영)</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2023.01</td><td class="py-2 px-4">한국부동산개발협회 부회장</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-
-<!-- 대표이사 강미란 -->
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<h3 class="text-2xl font-bold mb-6 text-primary dark:text-accent">대표이사 강미란</h3>
-<div class="flex flex-col md:flex-row gap-6">
-<!-- 사진 영역 -->
-<div class="flex-shrink-0">
-<div class="w-48 h-64 bg-white dark:bg-surface-dark rounded-lg overflow-hidden border-2 border-gray-200 dark:border-gray-700">
-<img src="img/image 2.png" alt="대표이사 강미란" class="w-full h-full object-cover">
-</div>
-</div>
-<!-- 약력 테이블 -->
-<div class="flex-1 overflow-x-auto">
-<table class="w-full text-sm">
-<tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-<tr><td class="py-2 px-4 font-semibold w-32">1994</td><td class="py-2 px-4">수원대학교 도시공학 전공</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2006~2008</td><td class="py-2 px-4">제주특별자치도 도시계획직</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2015~2020</td><td class="py-2 px-4">전 제주시성과평가위원</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2018</td><td class="py-2 px-4">산업포장 수상 [제9244호]</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2019~</td><td class="py-2 px-4">전, 한국기술인협회 지역정책자문위원</td></tr>
-<tr><td class="py-2 px-4 font-semibold">2021~</td><td class="py-2 px-4">전. 제주특별자치도 지역건설산업발전위원<br>현. 대한국토도시계획학회 제주지회장<br>현. 제주특별자치도 경관위원회 심의위원<br>현. 제주특별자치도 도로관리심의위원<br>현. 서귀포시 도로관리심의위원</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- 기업이념 Section -->
-<section id="philosophy" class="tab-content hidden">
-<div class="bg-white dark:bg-surface-dark rounded-xl p-8 shadow-sm">
-<h2 class="text-3xl font-bold mb-6 text-primary dark:text-accent">기업이념</h2>
-
-<!-- 경영가치 -->
-<div class="mb-12">
-<h3 class="text-2xl font-bold mb-6 text-primary dark:text-accent">경영가치</h3>
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="flex items-start gap-4">
-<span class="text-3xl font-bold text-primary dark:text-accent flex-shrink-0">1</span>
-<div>
-<h4 class="font-bold text-primary dark:text-accent mb-2">고객가치경영</h4>
-<p class="text-base leading-relaxed">우리는 고객의 요구를 충족할 수 있는 가치를 끊임없이 창출하고 제공한다.</p>
-</div>
-</div>
-</div>
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="flex items-start gap-4">
-<span class="text-3xl font-bold text-primary dark:text-accent flex-shrink-0">2</span>
-<div>
-<h4 class="font-bold text-primary dark:text-accent mb-2">사회가치경영</h4>
-<p class="text-base leading-relaxed">우리는 높은 도덕성과 봉사정신으로 가족적이고 건강한 조직운영과 사회기부를 실천한다.</p>
-</div>
-</div>
-</div>
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="flex items-start gap-4">
-<span class="text-3xl font-bold text-primary dark:text-accent flex-shrink-0">3</span>
-<div>
-<h4 class="font-bold text-primary dark:text-accent mb-2">지식가치경영</h4>
-<p class="text-base leading-relaxed">우리 개개인은 창조적인 사고, 열정으로 최고의 능력을 발휘한다.</p>
-</div>
-</div>
-</div>
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="flex items-start gap-4">
-<span class="text-3xl font-bold text-primary dark:text-accent flex-shrink-0">4</span>
-<div>
-<h4 class="font-bold text-primary dark:text-accent mb-2">노사상생경영</h4>
-<p class="text-base leading-relaxed">우리는 열린 경영과 상생적 노사 문화구현을 통해 일할 맛 나는 기업이미지를 만든다.</p>
-</div>
-</div>
-</div>
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="flex items-start gap-4">
-<span class="text-3xl font-bold text-primary dark:text-accent flex-shrink-0">5</span>
-<div>
-<h4 class="font-bold text-primary dark:text-accent mb-2">주인정신경영</h4>
-<p class="text-base leading-relaxed">우리는 임직원 하나 하나의 시너지를 극대화하는 임직원 개개인의 주인정신을 실천한다.</p>
-</div>
-</div>
-</div>
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="flex items-start gap-4">
-<span class="text-3xl font-bold text-primary dark:text-accent flex-shrink-0">6</span>
-<div>
-<h4 class="font-bold text-primary dark:text-accent mb-2">윤리가치경영</h4>
-<p class="text-base leading-relaxed">우리 임직원은 정직과 공정의 마음가짐으로 회사 및 사회의 사회윤리규범을 성실하게 지키며 공정한 직무수행을 해나간다.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- 인재상 -->
-<div class="mb-12">
-<h3 class="text-2xl font-bold mb-6 text-primary dark:text-accent">인재상</h3>
-<div class="grid md:grid-cols-3 gap-6">
-<div class="text-center p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="w-16 h-16 mx-auto mb-4 bg-primary/10 dark:bg-accent/10 rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-primary dark:text-accent text-3xl">sentiment_satisfied</span>
-</div>
-<h4 class="text-lg font-bold mb-2 text-primary dark:text-accent">JOY</h4>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark">일을 즐길 줄 아는</p>
-</div>
-<div class="text-center p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="w-16 h-16 mx-auto mb-4 bg-primary/10 dark:bg-accent/10 rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-primary dark:text-accent text-3xl">local_fire_department</span>
-</div>
-<h4 class="text-lg font-bold mb-2 text-primary dark:text-accent">PASSION</h4>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark">열정을 지닌</p>
-</div>
-<div class="text-center p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="w-16 h-16 mx-auto mb-4 bg-primary/10 dark:bg-accent/10 rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-primary dark:text-accent text-3xl">manage_accounts</span>
-</div>
-<h4 class="text-lg font-bold mb-2 text-primary dark:text-accent">MANAGEMENT</h4>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark">자신과 업무를 관리할 줄 아는 인재</p>
-</div>
-</div>
-</div>
-
-<!-- 슬로건 -->
-<div>
-<h3 class="text-2xl font-bold mb-6 text-primary dark:text-accent">슬로건</h3>
-<div class="p-8 bg-surface-light dark:bg-background-dark rounded-lg border-2 border-primary dark:border-accent">
-<p class="text-2xl font-bold text-primary dark:text-accent mb-6 text-center">
-2025년 위기를 기회로 JUMP, PASSION, MAGIC!<br>
-JMP! Everything will be OKAY!
-</p>
-<p class="text-lg leading-relaxed mb-4">
-2025년은 위기를 기회로 만들자는 슬로건으로 열정을 가지고 도약하면 이룰수 없는 기적을 만들수 있다는 기업이니셜 의미를 임직원 전체가 다시한번 되새기는 계기가 될 것입니다.
-</p>
-<p class="text-lg leading-relaxed">
-그리고 함께하는 제이피엠 그룹 임직원들이 2025년 모든 일이 다 OKAY! 될 것이라는 믿음과 목표를 다짐하는 슬로건입니다.
-</p>
-</div>
-</div>
-
-</div>
-</section>
-
-<!-- 연혁 Section -->
-<section id="history" class="tab-content hidden">
-<div class="bg-white dark:bg-surface-dark rounded-xl p-8 shadow-sm">
-<h2 class="text-3xl font-bold mb-6 text-primary dark:text-accent">연혁</h2>
-
-<!-- 회사 연혁 -->
-<div class="mb-12">
-<h3 class="text-2xl font-bold mb-6 text-primary dark:text-accent flex items-center gap-2">
-<span class="material-symbols-outlined">event_note</span>
-회사 연혁
-</h3>
-<div class="space-y-6">
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2023</div>
-<div class="flex-1 space-y-2">
-<p>• 07.10 - 주택건설 / 대지조성업 등록</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2021</div>
-<div class="flex-1 space-y-2">
-<p>• 02.05 - (주)내경엔지니어링 인수</p>
-<p>• 07.20 - 유티정보 주식회사 인수</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2020</div>
-<div class="flex-1 space-y-2">
-<p>• 01.02 - 직접생산확인증명서 - 지도작성법</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2019</div>
-<div class="flex-1 space-y-2">
-<p>• 03.07 - 직접생산확인증명서 - 지질학 (최초 2017-03-07)</p>
-<p>• 03.19 - 산업디자인전문회사 신고 (환경디자인)</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2014</div>
-<div class="flex-1 space-y-2">
-<p>• 02.04 - 상호변경 (주)제이피엠엔지니어링 → 주식회사 제이피엠</p>
-<p>• 02.18 - 건설기술용역업 등록 – 설계, 사업관리</p>
-<p>• 11.21 - 방재관리대책대행자업 체결</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2013</div>
-<div class="flex-1 space-y-2">
-<p>• 01.18 - 엔지니어링 활동주체 등록 – 조경</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2012</div>
-<div class="flex-1 space-y-2">
-<p>• 03.12 - 본점 소재지 변경 – 제주시 원노형6길 6 제이피엠빌딩</p>
-<p>• 06.01 - 전기사업본부 개설 – 전기, 소방, 통신, 면허등록</p>
-<p>• 10.19 - 기업부설연구소 변경 – 해양풍력발전연구소</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2011</div>
-<div class="flex-1 space-y-2">
-<p>• 01.06 - 건축사사무소 설립 (주)제이피엠건축사사무소</p>
-<p>• 01.28 - 엔지니어링 활동주체 등록 – 환경관리 (수질관리)</p>
-<p>• 03.30 - 엔지니어링 활동주체 등록 – 항만해안</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2010</div>
-<div class="flex-1 space-y-2">
-<p>• 03.19 - 종합감리전문회사 등록</p>
-<p>• 06.22 - 서울지사 설립 – 지사 : 서울특별시 강남구 삼성동 157-18</p>
-<p>• 08.11 - 환경영향평가대행자 등록</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2009</div>
-<div class="flex-1 space-y-2">
-<p>• 05.14 - 엔지니어링 활동주체 등록 – 교통</p>
-<p>• 05.26 - 기업부설연구소 개설 – (주)제이피엠엔지니어링 기술개발연구소</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2008</div>
-<div class="flex-1 space-y-2">
-<p>• 09.05 - 본점 소재지 변경 – 제주시 연동 446 종인빌딩 3층</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2007</div>
-<div class="flex-1 space-y-2">
-<p>• 01.03 - 일반측량업 등록</p>
-<p>• 12.06 - 엔지니어링 활동주체 등록 – 토질 및 기초</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2006</div>
-<div class="flex-1 space-y-2">
-<p>• 10.18 - (주)제이피엠엔지니어링 설립</p>
-<p>• 10.31 - 감리전문회사 등록</p>
-<p>• 11.03 - 엔지니어링 활동주체 등록 – 상하수도, 도시계획</p>
-<p>• 12.29 - 엔지니어링 활동주체 등록 – 토목구조, 도로 및 공항, 수자원개발</p>
-</div>
-</div>
-</div>
-</div>
-
-<!-- 회사 수상경력 -->
-<div>
-<h3 class="text-2xl font-bold mb-6 text-primary dark:text-accent flex items-center gap-2">
-<span class="material-symbols-outlined">emoji_events</span>
-회사 수상경력
-</h3>
-<div class="space-y-6">
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2025</div>
-<div class="flex-1 space-y-2">
-<p>• 04.30 - 일생활균형 캠페인 참여기업</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2023</div>
-<div class="flex-1 space-y-2">
-<p>• 10.27 - 대한적십자사 협회봉사활동 감사패 (대한적십자사)</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2022</div>
-<div class="flex-1 space-y-2">
-<p>• 06.01 - 청년통일 일자리 우수기업 선정 (제주특별자치도)</p>
-<p>• 11.17 - 여성가족기업 인증 (문화체육관광부)</p>
-<p>• 11.17 - 가족친화인증기업 재인증 (여성가족부)</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2020</div>
-<div class="flex-1 space-y-2">
-<p>• 03.03 - 제55회 납세자의 날 국세청장 표창 모범납세자 선정</p>
-<p>• 07.15 - 일생활균형 캠페인 참여기업</p>
-<p>• 12.16 - 2020 제주 일생활균형 우수기업 (가족친화 선진문화 개선)</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2019</div>
-<div class="flex-1 space-y-2">
-<p>• 11.29 - 2019 제주 자원봉사대상 기업부문 우수상</p>
-<p>• 12.13 - 여성가족부 주관 가족친화기업 재인증</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2018</div>
-<div class="flex-1 space-y-2">
-<p>• 04.02 - 일생활균형 캠페인 참여 기업 (광주지방노동청)</p>
-<p>• 05.31 - 행정안전부장관 표창장 (제 9244호)</p>
-<p>• 11.16 - 현장실습 선도기업 인증 (제주특별자치도교육감)</p>
-<p>• 12.20 - 제주 비정규직 근로환경 개선 우수기업 수상 (임금수준 우수)</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2017</div>
-<div class="flex-1 space-y-2">
-<p>• 12.19 - 여성가족부 주관 가족친화기업 재인증</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2014</div>
-<div class="flex-1 space-y-2">
-<p>• 12.19 - 여성가족부 주관 가족친화 인증</p>
-<p>• 12.19 - 가족친화인증기업 여성가족부장관 표창 (대한민국)</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2012</div>
-<div class="flex-1 space-y-2">
-<p>• 07.08 - 2012년 고용우수기업 재선정 (제주특별자치도)</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2011</div>
-<div class="flex-1 space-y-2">
-<p>• 12.22 - 성장유망중소기업 선정 (제주특별자치도)</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2010</div>
-<div class="flex-1 space-y-2">
-<p>• 07.08 - 고용우수기업 선정 (제주특별자치도)</p>
-<p>• 12.09 - 2010년 제주경제대상 부문상 수상</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-24 flex-shrink-0 font-bold text-primary dark:text-accent">2008</div>
-<div class="flex-1 space-y-2">
-<p>• 12.22 - 성장유망중소기업 선정 (제주특별자치도)</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- 관계사 Section -->
-<section id="affiliates" class="tab-content hidden">
-<div class="bg-white dark:bg-surface-dark rounded-xl p-8 shadow-sm">
-<h2 class="text-3xl font-bold mb-6 text-primary dark:text-accent">관계사</h2>
-<div class="grid md:grid-cols-2 gap-6">
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-symbols-outlined text-primary dark:text-accent">apartment</span>
-<h3 class="text-lg font-bold">유티정보 주식회사</h3>
-</div>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark">지능형교통시스템(ITS), 고속도로교통관리시스템(FTMS), 도시교통정보시스템(UTIS) 전문 소프트웨어 개발업체</p>
-</div>
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-symbols-outlined text-primary dark:text-accent">engineering</span>
-<h3 class="text-lg font-bold">주식회사 해진이엔씨</h3>
-</div>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark">제주 최고의 종합엔지니어링&컨설팅 기업</p>
-</div>
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-symbols-outlined text-primary dark:text-accent">forest</span>
-<h3 class="text-lg font-bold">주식회사 산들엔</h3>
-</div>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark">제주 최고의 환경영향평가 관련 엔지니어링 서비스 기업</p>
-</div>
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-symbols-outlined text-primary dark:text-accent">construction</span>
-<h3 class="text-lg font-bold">주식회사 종합건설가온</h3>
-</div>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark">제주 최고의 종합건설기업</p>
-</div>
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-symbols-outlined text-primary dark:text-accent">traffic</span>
-<h3 class="text-lg font-bold">주식회사 인트랜</h3>
-</div>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark">제주 최고의 교통영향평가 전문 엔지니어링기업</p>
-</div>
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-symbols-outlined text-primary dark:text-accent">architecture</span>
-<h3 class="text-lg font-bold">주식회사 하람건축사사무소</h3>
-</div>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark">최고의 기술력으로 안전을 설계/감리하는 기업</p>
-</div>
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-symbols-outlined text-primary dark:text-accent">water_drop</span>
-<h3 class="text-lg font-bold">주식회사 아쿠아테크제주</h3>
-</div>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark">전국 최고 수처리기술을 보유한 수처리전문기업</p>
-</div>
-<div class="p-6 bg-surface-light dark:bg-background-dark rounded-lg">
-<div class="flex items-center gap-3 mb-3">
-<span class="material-symbols-outlined text-primary dark:text-accent">location_city</span>
-<h3 class="text-lg font-bold">주식회사 엠제인</h3>
-</div>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark">도시계획 전문 엔지니어링기업</p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- 홍보 동영상 Section -->
-<section id="video" class="tab-content hidden">
-<div class="bg-white dark:bg-surface-dark rounded-xl p-8 shadow-sm">
-<h2 class="text-3xl font-bold mb-6 text-primary dark:text-accent">홍보 동영상</h2>
-<div class="space-y-6">
-<p class="text-text-muted-light dark:text-text-muted-dark mb-4">
-주식회사 제이피엠의 사업 소개 및 주요 프로젝트를 영상으로 확인하세요.
-</p>
-<div class="aspect-video w-full rounded-lg overflow-hidden bg-surface-light dark:bg-background-dark">
-<iframe class="w-full h-full" src="https://www.youtube.com/embed/kTeXTlhUajg" title="JPM Inc. 홍보 동영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-</div>
-</div>
-</section>
-
-<!-- 찾아오시는 길 Section -->
-<section id="location" class="tab-content hidden">
-<div class="bg-white dark:bg-surface-dark rounded-xl p-8 shadow-sm">
-<h2 class="text-3xl font-bold mb-6 text-primary dark:text-accent">찾아오시는 길</h2>
-<div class="space-y-6">
-<div class="w-full h-96 bg-surface-light dark:bg-background-dark rounded-lg flex items-center justify-center">
-<span class="text-text-muted-light">지도 영역 (Google Maps 또는 Kakao Map 연동)</span>
-</div>
-<div class="space-y-4">
-<div>
-<p class="font-semibold mb-1">주소</p>
-<p>제주특별자치도 제주시 원노형 6길, 6 (제이피엠빌딩)</p>
-</div>
-<div>
-<p class="font-semibold mb-1">전화</p>
-<p>064-746-5600</p>
-</div>
-<div>
-<p class="font-semibold mb-1">이메일</p>
-<p>jpmeng@naver.com</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div>
-</div>
-</div>
-</main>
-
-<footer class="bg-surface-light dark:bg-surface-dark text-text-muted-light dark:text-text-muted-dark">
-<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-<div class="grid grid-cols-1 md:grid-cols-5 gap-8">
-<div class="col-span-1 md:col-span-2">
-<a class="text-text-light dark:text-text-dark mb-4 block" href="index.html">
-<h3 class="text-xl font-bold">JPM Inc.</h3>
-</a>
-<p class="text-sm mb-6">무한한 열정과 기술력으로 세계를 선도하는 기업</p>
-<div class="space-y-2 text-sm">
-<div class="flex items-center justify-between group">
-<p><span class="font-semibold">주소:</span> 제주특별자치도 제주시 원노형 6길, 6 (제이피엠빌딩)</p>
-<button class="copy-btn opacity-0 group-hover:opacity-100 transition-opacity ml-2 p-1 hover:bg-surface-light dark:hover:bg-background-dark rounded" data-copy="제주특별자치도 제주시 원노형 6길, 6 (제이피엠빌딩)">
-<span class="material-symbols-outlined text-sm">content_copy</span>
-</button>
-</div>
-<div class="flex items-center justify-between group">
-<p><span class="font-semibold">전화:</span> 064-746-5600</p>
-<button class="copy-btn opacity-0 group-hover:opacity-100 transition-opacity ml-2 p-1 hover:bg-surface-light dark:hover:bg-background-dark rounded" data-copy="064-746-5600">
-<span class="material-symbols-outlined text-sm">content_copy</span>
-</button>
-</div>
-<div class="flex items-center justify-between group">
-<p><span class="font-semibold">팩스:</span> 064-747-6653</p>
-<button class="copy-btn opacity-0 group-hover:opacity-100 transition-opacity ml-2 p-1 hover:bg-surface-light dark:hover:bg-background-dark rounded" data-copy="064-747-6653">
-<span class="material-symbols-outlined text-sm">content_copy</span>
-</button>
-</div>
-<div class="flex items-center justify-between group">
-<p><span class="font-semibold">이메일:</span> jpmeng@naver.com</p>
-<button class="copy-btn opacity-0 group-hover:opacity-100 transition-opacity ml-2 p-1 hover:bg-surface-light dark:hover:bg-background-dark rounded" data-copy="jpmeng@naver.com">
-<span class="material-symbols-outlined text-sm">content_copy</span>
-</button>
-</div>
-</div>
-</div>
-<div class="col-span-1">
-<h4 class="font-semibold text-text-light dark:text-text-dark mb-4">회사소개</h4>
-<ul class="space-y-2 text-sm">
-<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="about.html#greeting">인사말</a></li>
-<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="about.html#ceo">대표이사 약력</a></li>
-<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="about.html#philosophy">기업이념</a></li>
-<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="about.html#history">연혁</a></li>
-<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="about.html#affiliates">관계사</a></li>
-<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="about.html#video">홍보 동영상</a></li>
-<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="about.html#location">찾아오시는 길</a></li>
-</ul>
-</div>
-<div class="col-span-1">
-<h4 class="font-semibold text-text-light dark:text-text-dark mb-4">사업분야</h4>
-<ul class="space-y-2 text-sm">
-<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="business.html#urban-planning">도시계획</a></li>
-<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="business.html#civil-engineering">토목설계</a></li>
-<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="business.html#project-management">사업관리</a></li>
-<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="business.html#disaster-assessment">재해영향평가</a></li>
-<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="business.html#architecture">건축사</a></li>
-</ul>
-</div>
-<div class="col-span-1">
-<h4 class="font-semibold text-text-light dark:text-text-dark mb-4">고객센터</h4>
-<ul class="space-y-2 text-sm">
-<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="customer.html#notice">공지사항</a></li>
-<li><a class="hover:text-text-light dark:hover:text-text-dark transition-colors" href="customer.html#contact">문의하기</a></li>
-</ul>
-</div>
-</div>
-<div class="mt-12 border-t border-gray-300 dark:border-gray-700 pt-8">
-<div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-<div class="flex gap-4">
-<button id="privacyBtn" class="hover:text-text-light dark:hover:text-text-dark transition-colors cursor-pointer">개인정보처리방침</button>
-<span class="text-text-muted-light dark:text-text-muted-dark">|</span>
-<a href="admin.html" class="hover:text-text-light dark:hover:text-text-dark transition-colors">관리자</a>
-<span class="text-text-muted-light dark:text-text-muted-dark">|</span>
-<a href="http://it9.co.kr/bbs/board.php?bo_table=portfolio" target="_blank" rel="noopener noreferrer" class="hover:text-text-light dark:hover:text-text-dark transition-colors">ITNINE</a>
-</div>
-<p class="text-center md:text-right">Copyright(c)2017 JPM ENGINEERING CO., LTD.</p>
-</div>
-</div>
-</div>
-</footer>
-
-<!-- Privacy Policy Modal -->
-<div id="privacyModal" class="fixed inset-0 bg-black/50 z-50 hidden items-center justify-center p-4">
-<div class="bg-white dark:bg-surface-dark rounded-xl max-w-2xl w-full max-h-[80vh] overflow-hidden flex flex-col">
-<div class="flex items-center justify-between p-6 border-b border-surface-light dark:border-background-dark">
-<h3 class="text-xl font-bold text-text-light dark:text-text-dark">개인정보처리방침</h3>
-<button id="closeModalBtn" class="text-text-muted-light dark:text-text-muted-dark hover:text-text-light dark:hover:text-text-dark transition-colors">
-<span class="material-symbols-outlined">close</span>
-</button>
-</div>
-<div class="p-6 overflow-y-auto text-text-light dark:text-text-dark">
-<div class="space-y-4 text-sm">
-<p class="font-semibold">주식회사 제이피엠(이하 "회사")은 개인정보 보호법에 따라 이용자의 개인정보 보호 및 권익을 보호하고 개인정보와 관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 처리방침을 두고 있습니다.</p>
-<div>
-<h4 class="font-semibold mb-2">제1조 (개인정보의 처리목적)</h4>
-<p>회사는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보 보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.</p>
-<ul class="list-disc list-inside mt-2 space-y-1">
-<li>홈페이지 회원 가입 및 관리</li>
-<li>민원사무 처리</li>
-<li>서비스 제공에 관한 계약 이행</li>
-</ul>
-</div>
-<div>
-<h4 class="font-semibold mb-2">제2조 (개인정보의 처리 및 보유기간)</h4>
-<p>회사는 법령에 따른 개인정보 보유·이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의받은 개인정보 보유·이용기간 내에서 개인정보를 처리·보유합니다.</p>
-</div>
-<div>
-<h4 class="font-semibold mb-2">제3조 (정보주체의 권리·의무 및 행사방법)</h4>
-<p>정보주체는 회사에 대해 언제든지 개인정보 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다.</p>
-</div>
-<div>
-<h4 class="font-semibold mb-2">제4조 (개인정보의 안전성 확보조치)</h4>
-<p>회사는 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.</p>
-<ul class="list-disc list-inside mt-2 space-y-1">
-<li>관리적 조치: 내부관리계획 수립·시행, 정기적 직원 교육 등</li>
-<li>기술적 조치: 개인정보처리시스템 등의 접근권한 관리, 접근통제시스템 설치, 고유식별정보 등의 암호화</li>
-<li>물리적 조치: 전산실, 자료보관실 등의 접근통제</li>
-</ul>
-</div>
-<div class="pt-4 border-t border-surface-light dark:border-background-dark">
-<p class="text-xs text-text-muted-light dark:text-text-muted-dark">개인정보 보호책임자</p>
-<p class="text-xs text-text-muted-light dark:text-text-muted-dark mt-1">성명: [담당자명]</p>
-<p class="text-xs text-text-muted-light dark:text-text-muted-dark">연락처: 064-746-5600, jpmeng@naver.com</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<script>
-// Tab functionality
-const tabLinks = document.querySelectorAll('.tab-link');
-const tabContents = document.querySelectorAll('.tab-content');
-
-tabLinks.forEach(link => {
-    link.addEventListener('click', function() {
-        const targetTab = this.getAttribute('data-tab');
-
-        // Remove active class from all tabs and contents
-        tabLinks.forEach(l => l.classList.remove('active'));
-        tabContents.forEach(c => c.classList.remove('active'));
-
-        // Add active class to clicked tab and corresponding content
-        this.classList.add('active');
-        document.getElementById(targetTab).classList.add('active');
-    });
-});
-
-// Handle URL hash on load
-window.addEventListener('load', () => {
-    if (window.location.hash) {
-        const targetId = window.location.hash.substring(1);
-        const targetLink = document.querySelector(`[data-tab="${targetId}"]`);
-
-        if (targetLink) {
-            tabLinks.forEach(l => l.classList.remove('active'));
-            tabContents.forEach(c => c.classList.remove('active'));
-
-            targetLink.classList.add('active');
-            document.getElementById(targetId).classList.add('active');
+      privacyModal.addEventListener("click", (e) => {
+        if (e.target === privacyModal) {
+          privacyModal.classList.add("hidden");
+          privacyModal.classList.remove("flex");
         }
-    }
-});
+      });
 
-// Privacy Modal
-const privacyBtn = document.getElementById('privacyBtn');
-const privacyModal = document.getElementById('privacyModal');
-const closeModalBtn = document.getElementById('closeModalBtn');
+      // Copy to clipboard functionality
+      document.querySelectorAll(".copy-btn").forEach((button) => {
+        button.addEventListener("click", async function () {
+          const textToCopy = this.getAttribute("data-copy");
 
-privacyBtn.addEventListener('click', () => {
-    privacyModal.classList.remove('hidden');
-    privacyModal.classList.add('flex');
-});
-
-closeModalBtn.addEventListener('click', () => {
-    privacyModal.classList.add('hidden');
-    privacyModal.classList.remove('flex');
-});
-
-privacyModal.addEventListener('click', (e) => {
-    if (e.target === privacyModal) {
-        privacyModal.classList.add('hidden');
-        privacyModal.classList.remove('flex');
-    }
-});
-
-// Copy to clipboard functionality
-document.querySelectorAll('.copy-btn').forEach(button => {
-    button.addEventListener('click', async function() {
-        const textToCopy = this.getAttribute('data-copy');
-
-        try {
+          try {
             await navigator.clipboard.writeText(textToCopy);
 
             // Show feedback
-            const originalIcon = this.querySelector('.material-symbols-outlined').textContent;
-            this.querySelector('.material-symbols-outlined').textContent = 'check';
-            this.classList.add('text-green-600', 'dark:text-green-400');
+            const originalIcon = this.querySelector(
+              ".material-symbols-outlined"
+            ).textContent;
+            this.querySelector(".material-symbols-outlined").textContent =
+              "check";
+            this.classList.add("text-green-600", "dark:text-green-400");
 
             setTimeout(() => {
-                this.querySelector('.material-symbols-outlined').textContent = originalIcon;
-                this.classList.remove('text-green-600', 'dark:text-green-400');
+              this.querySelector(".material-symbols-outlined").textContent =
+                originalIcon;
+              this.classList.remove("text-green-600", "dark:text-green-400");
             }, 2000);
-        } catch (err) {
+          } catch (err) {
             // Fallback for older browsers
-            const textArea = document.createElement('textarea');
+            const textArea = document.createElement("textarea");
             textArea.value = textToCopy;
-            textArea.style.position = 'fixed';
-            textArea.style.left = '-999999px';
+            textArea.style.position = "fixed";
+            textArea.style.left = "-999999px";
             document.body.appendChild(textArea);
             textArea.select();
 
             try {
-                document.execCommand('copy');
-                const originalIcon = this.querySelector('.material-symbols-outlined').textContent;
-                this.querySelector('.material-symbols-outlined').textContent = 'check';
-                this.classList.add('text-green-600', 'dark:text-green-400');
+              document.execCommand("copy");
+              const originalIcon = this.querySelector(
+                ".material-symbols-outlined"
+              ).textContent;
+              this.querySelector(".material-symbols-outlined").textContent =
+                "check";
+              this.classList.add("text-green-600", "dark:text-green-400");
 
-                setTimeout(() => {
-                    this.querySelector('.material-symbols-outlined').textContent = originalIcon;
-                    this.classList.remove('text-green-600', 'dark:text-green-400');
-                }, 2000);
+              setTimeout(() => {
+                this.querySelector(".material-symbols-outlined").textContent =
+                  originalIcon;
+                this.classList.remove("text-green-600", "dark:text-green-400");
+              }, 2000);
             } catch (err) {
-                console.error('복사 실패:', err);
+              console.error("복사 실패:", err);
             }
 
             document.body.removeChild(textArea);
-        }
-    });
-});
-</script>
-
-</body></html>
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
